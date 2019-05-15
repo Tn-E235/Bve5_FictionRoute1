@@ -46,6 +46,7 @@
           $Tr1 = 0; $x = -2.5; $ry = 0;
           include 'SignalPut.txt';
           include 'P-Signal.txt';
+#-------------------------------------------------------------------------------
 3250+25;
 3500+25;  $Dis = distance;
           Section.BeginNew(0,2,4);
@@ -64,8 +65,10 @@
           include 'SignalPut.txt';
           include 'P-Signal.txt';
 4000+25;  Beacon.Put(25,-1, 0);
+#ATS-P区間終了
 #-------------------------------------------------------------------------------
-  9000;   $Dis = distance;
+#ATS-P区間開始
+9000;     $Dis = distance;
           Section.BeginNew(0,2,4);
           Signal['Type3_LED'].Put(0,     '0',-2.5,4.8,29,0,0,0,0,0);
           Structure['Sig_Pole'].Put(     '0',-2.5,0.0,29,0,0,0,0,0);
@@ -89,6 +92,7 @@
           $Tr1 = 0; $x = -2.5; $ry = 0;
           include 'SignalPut.txt';
           include 'P-Signal.txt';
+#-------------------------------------------------------------------------------
 10250+25;
 10500+25; $Dis = distance;
           Section.BeginNew(0,2,4);
@@ -105,6 +109,7 @@
           $Tr1 = 0; $x = -2.5; $ry = 0;
           include 'SignalPut.txt';
           include 'P-Signal.txt';
+#-------------------------------------------------------------------------------
 11500+25; $Dis = distance;
           Section.BeginNew(0,2,4);
           $Tr1 = 0; $x = -2.5; $ry = 0;
@@ -120,6 +125,7 @@
           $Tr1 = 0; $x = -2.5; $ry = 0;
           include 'SignalPut.txt';
           include 'P-Signal.txt';
+#-------------------------------------------------------------------------------
 12500+25; $Dis = distance;
           Section.BeginNew(0,2,4);
           $Tr1 = 0; $x = -2.5; $ry = 0;
@@ -135,6 +141,7 @@
           $Tr1 = 0; $x = -2.5; $ry = 0;
           include 'SignalPut.txt';
           include 'P-Signal.txt';
+#-------------------------------------------------------------------------------
 13500+25; $Dis = distance;
           Section.BeginNew(0,2,4);
           $Tr1 = 0; $x = -2.5; $ry = 0;
@@ -150,3 +157,4 @@
           $Tr1 = 0; $x = -2.5; $ry = 0;
           include 'SignalPut.txt';
           include 'P-Signal.txt';
+#-------------------------------------------------------------------------------

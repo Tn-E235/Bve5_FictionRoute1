@@ -5,18 +5,21 @@
           $Tr1 = 0; $x = -2.5; $ry = 0;
           include 'SignalPut.txt';
           include 'P-Signal.txt';
+#-------------------------------------------------------------------------------
 1000+25;  $Dis = distance;
           Section.BeginNew(0,2,4);
           $Tr1 = 0; $x = -2.5; $ry = 0;
           include 'SignalPut.txt';
           include 'P-Signal.txt';
 1250+25;
-1500+25;  $Dis = distance;
+1000+1000/3+25;
+          $Dis = distance;
           Section.BeginNew(0,2,4);
           $Tr1 = 0; $x = -2.5; $ry = 0;
           include 'SignalPut.txt';
           include 'P-Signal.txt';
-1750+25;  $Dis = distance;
+1000+(1000/3)*2+25;
+          $Dis = distance;
           Section.BeginNew(0,2,4);
           $Tr1 = 0; $x = -2.5; $ry = 0;
           include 'SignalPut.txt';
@@ -26,6 +29,7 @@
           $Tr1 = 0; $x = -2.5; $ry = 0;
           include 'SignalPut.txt';
           include 'P-Signal.txt';
+#-------------------------------------------------------------------------------
 2250+25;
 2500+25;  $Dis = distance;
           Section.BeginNew(0,2,4);

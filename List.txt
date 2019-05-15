@@ -1,0 +1,235 @@
+﻿BveTs Structure List 1.00
+################################################################################
+rail_PC,        ..\Structures\Tn_E235\Rail\rail_PC.x                #PC枕木のレール
+#-------------------------------------------------------------------------------
+#ホーム幅7m向け(線路間隔10.5m)
+form_roofL2,    ..\Structures\Tn_E235\Station\roof\form_roofL2.x    #左に壁・屋根なし・狭いタイプ
+form_roofR2,    ..\Structures\Tn_E235\Station\roof\form_roofR2.x    #右に壁・屋根なし・狭いタイプ
+
+form_CLs1,      ..\Structures\Tn_E235\Station\roof\form_CLs1.x      #左に壁・屋根なし・狭いタイプ
+form_CRs1,      ..\Structures\Tn_E235\Station\roof\form_CRs1.x      #右に壁・屋根なし・狭いタイプ
+conc_fenceL1,   ..\Structures\Tn_E235\Station\wall\conc_fenceL1.x   #form_CLs1,form_CRs1向け
+conc_fenceR1,   ..\Structures\Tn_E235\Station\wall\conc_fenceR1.x   #ホームの壁(コンクリ)
+
+form_roofL1,      ..\Structures\Tn_E235\Station\form_roof\form_roofL1.x       #屋根・左に壁
+form_roofR1,      ..\Structures\Tn_E235\Station\form_roof\form_roofR1.x       #屋根・右に壁
+form_roofL1_pole, ..\Structures\Tn_E235\Station\form_roof\form_roofL1_pole.x  #form_roofL1用支柱
+form_roofR1_pole, ..\Structures\Tn_E235\Station\form_roof\form_roofR1_pole.x  #form_roofR1用支柱
+
+form_roofYL1,     ..\Structures\Tn_E235\Station\form_roof\form_roofYL1.x      #Y字の屋根(左)
+form_roofYL1_pole,..\Structures\Tn_E235\Station\form_roof\form_roofYL1_pole.x #form_roofYL1用支柱
+form_roofYR1,     ..\Structures\Tn_E235\Station\form_roof\form_roofYR1.x      #Y字の屋根(右)
+form_roofYR1_pole,..\Structures\Tn_E235\Station\form_roof\form_roofYR1_pole.x #form_roofYR1用支柱
+
+form_pole_light1, ..\Structures\Tn_E235\Station\light\form_pole_light1.x      #ホーム用照明(片側)
+form_pole_light2, ..\Structures\Tn_E235\Station\light\form_pole_light2.x      #ホーム用照明(両側)
+#-------------------------------------------------------------------------------
+#ホームの装飾品
+#Bench1,             ..\Structures\Tn_E235\Station\Accessory\Bench1.x    #ベンチ1
+#LedDpc1,            ..\Structures\Tn_E235\Station\Accessory\LedDpc1.x    #電光掲示板1
+#Line-GuidePlateL1,   ..\Structures\Tn_E235\Station\Accessory\Line-GuidePlateL1.x    #番線案内板(左)1
+#Line-GuidePlateR1,   ..\Structures\Tn_E235\Station\Accessory\Line-GuidePlateR1.x    #番線案内板(右)1
+#form-Stairs1,       ..\Structures\Tn_E235\Station\Accessory\form-Stairs1.x    #階段1
+#StaSign1,           ..\Structures\Tn_E235\Station\Accessory\form-Stairs1.x    #階段1
+#-------------------------------------------------------------------------------
+#E233系1000番代JR京浜東北線向け
+E233-1000-1,    ..\Structures\Tn_E235\Train\E233-1000\E233-1000-1.x
+E233-1000-2,    ..\Structures\Tn_E235\Train\E233-1000\E233-1000-2.x
+E233-1000-3,    ..\Structures\Tn_E235\Train\E233-1000\E233-1000-3.x
+E233-1000-5,    ..\Structures\Tn_E235\Train\E233-1000\E233-1000-5.x
+E233-1000-10,   ..\Structures\Tn_E235\Train\E233-1000\E233-1000-10.x
+#-------------------------------------------------------------------------------
+#E233系6000番代JR横浜線向け
+E233-6000-1,    ..\Structures\Tn_E235\Train\E233-6000\E233-6000-1.x
+E233-6000-2,    ..\Structures\Tn_E235\Train\E233-6000\E233-6000-2.x
+E233-6000-4,    ..\Structures\Tn_E235\Train\E233-6000\E233-6000-4.x
+E233-6000-7,    ..\Structures\Tn_E235\Train\E233-6000\E233-6000-7.x
+E233-6000-8,    ..\Structures\Tn_E235\Train\E233-6000\E233-6000-8.x
+#-------------------------------------------------------------------------------
+#水路
+#Waterway,       ..\Structures\Tn_E235\Dike\Waterway.x
+#Waterway2,      ..\Structures\Tn_E235\Dike\Waterway2.x
+################################################################################
+#信号来ストラクチャ
+Sig_Base,       ..\Structures\FCS_TM\SigPole\Sig_Base.x
+Sig_Base_Step,  ..\Structures\FCS_TM\SigPole\Sig_Base_Step.x
+Sig_Pole,       ..\Structures\FCS_TM\SigPole\Sig_Pole.x
+Sig3N,          ..\Structures\FCS_TM\ColorSignal\Sig3bN.x    #使用停止
+Sig30_LED,      ..\Structures\FCS_TM\ColorSignal\Sig3b0_LED.x
+Sig30_BN,       ..\Structures\FCS_TM\ColorSignal\Sig3b0_BN.x #背板無
+Sig32_LED,      ..\Structures\FCS_TM\ColorSignal\Sig3b2_LED.x
+Sig32_BN,       ..\Structures\FCS_TM\ColorSignal\Sig3b2_BN.x #背板無
+Sig34_LED,      ..\Structures\FCS_TM\ColorSignal\Sig3b4_LED.x
+Sig34_BN,       ..\Structures\FCS_TM\ColorSignal\Sig3b4_BN.x #背板無
+Sig3YxN,        ..\Structures\FCS_TM\ColorSignal\Sig3bYxN.x  #GR型 使用停止
+Sig3Yx0,        ..\Structures\FCS_TM\ColorSignal\Sig3bYx0.x  #GR型
+Sig3Yx4,        ..\Structures\FCS_TM\ColorSignal\Sig3bYx4.x  #GR型
+Sig3GxN,        ..\Structures\FCS_TM\ColorSignal\Sig3bGxN.x  #GY型 使用停止
+Sig3Gx0,        ..\Structures\FCS_TM\ColorSignal\Sig3bGx0.x  #GY型
+Sig3Gx2,        ..\Structures\FCS_TM\ColorSignal\Sig3bGx2.x  #GY型
+Flare30,        ..\Structures\FCS_TM\ColorSignal\Flare30.x
+Flare32,        ..\Structures\FCS_TM\ColorSignal\Flare32.x
+Flare34,        ..\Structures\FCS_TM\ColorSignal\Flare34.x
+################################################################################
+#地上子
+ats_a_G,        ..\Structures\GeneralStr_png\Accessory\Beacon\ats_a_G.x
+ats_a_O,        ..\Structures\GeneralStr_png\Accessory\Beacon\ats_a_O.x
+ats_a_R,        ..\Structures\GeneralStr_png\Accessory\Beacon\ats_a_R.x
+ats_a_W,        ..\Structures\GeneralStr_png\Accessory\Beacon\ats_a_W.x
+ats_b,          ..\Structures\GeneralStr_png\Accessory\Beacon\ats_b.x
+#-------------------------------------------------------------------------------
+#架線柱
+Pole1_S,        ..\Structures\GeneralStr_png\Accessory\E_Poles\Pole\Pole1_S.x
+#PoleTrs04A,     ..\Structures\GeneralStr_png\Accessory\E_Poles\PoleTruss\PoleTrs04A.x
+#PoleTrs05A,     ..\Structures\GeneralStr_png\Accessory\E_Poles\PoleTruss\PoleTrs05A.x
+PoleTrs06A,     ..\Structures\GeneralStr_png\Accessory\E_Poles\PoleTruss\PoleTrs06A.x
+PoleTrs07A,     ..\Structures\GeneralStr_png\Accessory\E_Poles\PoleTruss\PoleTrs07A.x
+PoleTrs08A,     ..\Structures\GeneralStr_png\Accessory\E_Poles\PoleTruss\PoleTrs08A.x
+PoleTrs09A,     ..\Structures\GeneralStr_png\Accessory\E_Poles\PoleTruss\PoleTrs09A.x
+PoleTrs10A,     ..\Structures\GeneralStr_png\Accessory\E_Poles\PoleTruss\PoleTrs10A.x
+PoleTrs11A,     ..\Structures\GeneralStr_png\Accessory\E_Poles\PoleTruss\PoleTrs11A.x
+PoleTrs12A,     ..\Structures\GeneralStr_png\Accessory\E_Poles\PoleTruss\PoleTrs12A.x
+PoleTrs14A,     ..\Structures\GeneralStr_png\Accessory\E_Poles\PoleTruss\PoleTrs14A.x
+#-------------------------------------------------------------------------------
+#架線
+#kasen20,        ..\Structures\GeneralStr_png\Accessory\E_Poles\kasen\kasen20.x
+#kasen20S,       ..\Structures\GeneralStr_png\Accessory\E_Poles\kasen\kasen20S.x
+#kasen25S,       ..\Structures\GeneralStr_png\Accessory\E_Poles\kasen\kasen25S.x
+#kasen30S,       ..\Structures\GeneralStr_png\Accessory\E_Poles\kasen\kasen30S.x
+#kasen35S,       ..\Structures\GeneralStr_png\Accessory\E_Poles\kasen\kasen35S.x
+kasen40S,       ..\Structures\GeneralStr_png\Accessory\E_Poles\kasen\kasen40S.x
+#kasen45S,       ..\Structures\GeneralStr_png\Accessory\E_Poles\kasen\kasen45S.x
+#kasen50S,       ..\Structures\GeneralStr_png\Accessory\E_Poles\kasen\kasen50S.x
+#-------------------------------------------------------------------------------
+#勾配標識
+Gp_DD,          ..\Structures\GeneralStr_png\Accessory\Posts\GradientPost\Gp_DD.x
+Gp_DL,          ..\Structures\GeneralStr_png\Accessory\Posts\GradientPost\Gp_DL.x
+Gp_DU,          ..\Structures\GeneralStr_png\Accessory\Posts\GradientPost\Gp_DU.x
+Gp_LD,          ..\Structures\GeneralStr_png\Accessory\Posts\GradientPost\Gp_LD.x
+Gp_LU,          ..\Structures\GeneralStr_png\Accessory\Posts\GradientPost\Gp_LU.x
+Gp_UD,          ..\Structures\GeneralStr_png\Accessory\Posts\GradientPost\Gp_UD.x
+Gp_UL,          ..\Structures\GeneralStr_png\Accessory\Posts\GradientPost\Gp_UL.x
+Gp_UU,          ..\Structures\GeneralStr_png\Accessory\Posts\GradientPost\Gp_UU.x
+#-------------------------------------------------------------------------------
+#高架壁
+#Wall_QN_L5m,    ..\Structures\GeneralStr_png\Wall\Wall_QN_L5m.x
+#Wall_QN_R5m,    ..\Structures\GeneralStr_png\Wall\Wall_QN_R5m.x
+#-------------------------------------------------------------------------------
+#道路
+#road_045_a,     ..\Structures\GeneralStr_png\Road\road_045_a.x
+#road_045_20,    ..\Structures\GeneralStr_png\Road\road_045_20.x
+#-------------------------------------------------------------------------------
+#速度制限標識
+SpeedLimEnd,    ..\Structures\GeneralStr_png\Default\SpeedLimEnd.x
+SpeedLimPole,   ..\Structures\GeneralStr_png\Default\SpeedLimPole.x
+SpeedLim0,      ..\Structures\GeneralStr_png\Default\SpeedLim0.x
+SpeedLim1,      ..\Structures\GeneralStr_png\Default\SpeedLim1.x
+SpeedLim2,      ..\Structures\GeneralStr_png\Default\SpeedLim2.x
+SpeedLim3,      ..\Structures\GeneralStr_png\Default\SpeedLim3.x
+SpeedLim4,      ..\Structures\GeneralStr_png\Default\SpeedLim4.x
+SpeedLim5,      ..\Structures\GeneralStr_png\Default\SpeedLim5.x
+SpeedLim6,      ..\Structures\GeneralStr_png\Default\SpeedLim6.x
+SpeedLim7,      ..\Structures\GeneralStr_png\Default\SpeedLim7.x
+SpeedLim8,      ..\Structures\GeneralStr_png\Default\SpeedLim8.x
+SpeedLim9,      ..\Structures\GeneralStr_png\Default\SpeedLim9.x
+Stop,           ..\Structures\GeneralStr_png\Default\Stop.x             #停止位置目標(全)
+#-------------------------------------------------------------------------------
+#ホームの線路側のブロック
+Form51L,        ..\Structures\GeneralStr_png\ACCC\Station\Form51L.x
+Form51R,        ..\Structures\GeneralStr_png\ACCC\Station\Form51R.x
+FormCL,         ..\Structures\GeneralStr_png\ACCC\Station\FormCL.x
+FormCR,         ..\Structures\GeneralStr_png\ACCC\Station\FormCR.x
+#Fence6L,        ..\Structures\GeneralStr_png\ACCC\Station\Fence6L.x
+#Fence6R,        ..\Structures\GeneralStr_png\ACCC\Station\Fence6R.x
+#-------------------------------------------------------------------------------
+#土手
+#DikeFace,       ..\Structures\GeneralStr_png\ACCC\Ground\DikeFace.x
+#DikeFaceL,      ..\Structures\GeneralStr_png\ACCC\Ground\DikeFaceL.x
+#DikeFaceR,      ..\Structures\GeneralStr_png\ACCC\Ground\DikeFaceR.x
+#-------------------------------------------------------------------------------
+#土手(右側・左側)
+DikeGrs5mL1,    ..\Structures\GeneralStr_png\ACCC\Ground\DikeGrs5mL1.x
+DikeGrs5mL2,    ..\Structures\GeneralStr_png\ACCC\Ground\DikeGrs5mL2.x
+DikeGrs5mL3,    ..\Structures\GeneralStr_png\ACCC\Ground\DikeGrs5mL3.x
+DikeGrs5mL4,    ..\Structures\GeneralStr_png\ACCC\Ground\DikeGrs5mL4.x
+DikeGrs5mL5,    ..\Structures\GeneralStr_png\ACCC\Ground\DikeGrs5mL5.x
+DikeGrs5mL6,    ..\Structures\GeneralStr_png\ACCC\Ground\DikeGrs5mL6.x
+DikeGrs5mR1,    ..\Structures\GeneralStr_png\ACCC\Ground\DikeGrs5mR1.x
+DikeGrs5mR2,    ..\Structures\GeneralStr_png\ACCC\Ground\DikeGrs5mR2.x
+DikeGrs5mR3,    ..\Structures\GeneralStr_png\ACCC\Ground\DikeGrs5mR3.x
+DikeGrs5mR4,    ..\Structures\GeneralStr_png\ACCC\Ground\DikeGrs5mR4.x
+DikeGrs5mR5,    ..\Structures\GeneralStr_png\ACCC\Ground\DikeGrs5mR5.x
+DikeGrs5mR6,    ..\Structures\GeneralStr_png\ACCC\Ground\DikeGrs5mR6.x
+#-------------------------------------------------------------------------------
+#背景
+Bg_fine_summer, ..\Structures\GeneralStr_png\BG\Bg_fine_summer.x
+#-------------------------------------------------------------------------------
+#地面
+Grass,          ..\Structures\GeneralStr_png\ACCC\Ground\Grass.x
+#-------------------------------------------------------------------------------
+#コンクリート土手(垂直)   ※土手とは
+Dike1Cnc5mR1,   ..\Structures\GeneralStr_png\Dike\Dike1Cnc5mR1.x
+Dike1Cnc5mR2,   ..\Structures\GeneralStr_png\Dike\Dike1Cnc5mR2.x
+Dike1Cnc5mR3,   ..\Structures\GeneralStr_png\Dike\Dike1Cnc5mR3.x
+Dike1Cnc5mR4,   ..\Structures\GeneralStr_png\Dike\Dike1Cnc5mR4.x
+Dike1Cnc5mR5,   ..\Structures\GeneralStr_png\Dike\Dike1Cnc5mR5.x
+Dike1Cnc5mR6,   ..\Structures\GeneralStr_png\Dike\Dike1Cnc5mR6.x
+Dike1Cnc5mL1,   ..\Structures\GeneralStr_png\Dike\Dike1Cnc5mL1.x
+Dike1Cnc5mL2,   ..\Structures\GeneralStr_png\Dike\Dike1Cnc5mL2.x
+Dike1Cnc5mL3,   ..\Structures\GeneralStr_png\Dike\Dike1Cnc5mL3.x
+Dike1Cnc5mL4,   ..\Structures\GeneralStr_png\Dike\Dike1Cnc5mL4.x
+Dike1Cnc5mL5,   ..\Structures\GeneralStr_png\Dike\Dike1Cnc5mL5.x
+Dike1Cnc5mL6,   ..\Structures\GeneralStr_png\Dike\Dike1Cnc5mL6.x
+#-------------------------------------------------------------------------------
+#コンクリート土手(斜面)
+#Dike2Cnc5mL1,   ..\Structures\GeneralStr_png\Dike\Dike2Cnc5mL1.x
+#Dike2Cnc5mL2,   ..\Structures\GeneralStr_png\Dike\Dike2Cnc5mL2.x
+#Dike2Cnc5mL3,   ..\Structures\GeneralStr_png\Dike\Dike2Cnc5mL3.x
+#Dike2Cnc5mL4,   ..\Structures\GeneralStr_png\Dike\Dike2Cnc5mL4.x
+#Dike2Cnc5mL5,   ..\Structures\GeneralStr_png\Dike\Dike2Cnc5mL5.x
+#Dike2Cnc5mL6,   ..\Structures\GeneralStr_png\Dike\Dike2Cnc5mL6.x
+#Dike2Cnc5mR1,   ..\Structures\GeneralStr_png\Dike\Dike2Cnc5mR1.x
+#Dike2Cnc5mR2,   ..\Structures\GeneralStr_png\Dike\Dike2Cnc5mR2.x
+#Dike2Cnc5mR3,   ..\Structures\GeneralStr_png\Dike\Dike2Cnc5mR3.x
+#Dike2Cnc5mR4,   ..\Structures\GeneralStr_png\Dike\Dike2Cnc5mR4.x
+#Dike2Cnc5mR5,   ..\Structures\GeneralStr_png\Dike\Dike2Cnc5mR5.x
+#Dike2Cnc5mR6,   ..\Structures\GeneralStr_png\Dike\Dike2Cnc5mR6.x
+#-------------------------------------------------------------------------------
+#コンクリート壁(斜面)
+#CrDike1La,      ..\Structures\GeneralStr_png\Dike\CrDike1La.x
+#CrDike1Lb,      ..\Structures\GeneralStr_png\Dike\CrDike1Lb.x
+#CrDike1Lsaku,   ..\Structures\GeneralStr_png\Dike\CrDike1Lsaku.x
+#CrDike1Ra,      ..\Structures\GeneralStr_png\Dike\CrDike1Ra.x
+#CrDike1Rb,      ..\Structures\GeneralStr_png\Dike\CrDike1Rb.x
+#CrDike1Rsaku,   ..\Structures\GeneralStr_png\Dike\CrDike1Rsaku.x
+#-------------------------------------------------------------------------------
+#木
+#tree01_S,       ..\Structures\GeneralStr_png\Nature\trees\tree01_S.x
+#tree01_Sm,      ..\Structures\GeneralStr_png\Nature\trees\tree01_Sm.x
+#tree02_S,       ..\Structures\GeneralStr_png\Nature\trees\tree02_S.x
+#tree02_Sm,      ..\Structures\GeneralStr_png\Nature\trees\tree02_Sm.x
+#tree03_S,       ..\Structures\GeneralStr_png\Nature\trees\tree03_S.x
+#tree03_Sm,      ..\Structures\GeneralStr_png\Nature\trees\tree03_Sm.x
+#tree04_S,       ..\Structures\GeneralStr_png\Nature\trees\tree04_S.x
+#tree04_Sm,      ..\Structures\GeneralStr_png\Nature\trees\tree04_Sm.x
+#tree05_S,       ..\Structures\GeneralStr_png\Nature\trees\tree05_S.x
+#tree05_Sm,      ..\Structures\GeneralStr_png\Nature\trees\tree05_Sm.x
+#-------------------------------------------------------------------------------
+#tree21_S,       ..\Structures\GeneralStr_png\Nature\trees_street\tree21_S.x
+#tree22_S,       ..\Structures\GeneralStr_png\Nature\trees_street\tree22_S.x
+#tree23_S,       ..\Structures\GeneralStr_png\Nature\trees_street\tree23_S.x
+#tree24_S,       ..\Structures\GeneralStr_png\Nature\trees_street\tree24_S.x
+#tree25_S,       ..\Structures\GeneralStr_png\Nature\trees_street\tree25_S.x
+#-------------------------------------------------------------------------------
+#ブッシュ
+#bush01,         ..\Structures\GeneralStr_png\Nature\bush\bush01.x
+#bush02,         ..\Structures\GeneralStr_png\Nature\bush\bush02.x
+#bush03,         ..\Structures\GeneralStr_png\Nature\bush\bush03.x
+#bush04,         ..\Structures\GeneralStr_png\Nature\bush\bush04.x
+#bush05,         ..\Structures\GeneralStr_png\Nature\bush\bush05.x
+#-------------------------------------------------------------------------------
+#-------------------------------------------------------------------------------
+#-------------------------------------------------------------------------------
+#-------------------------------------------------------------------------------
+#-------------------------------------------------------------------------------
+#-------------------------------------------------------------------------------

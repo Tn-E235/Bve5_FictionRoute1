@@ -1,0 +1,16 @@
+BveTs Map 2.02
+#右の島式ホーム(putbetweenで床を打埋めてもよし)
+$Dis;     Repeater['FormCR_'+$Tr1].Begin( $Tr1,0, 0, 0, 0, 0, 0, 1, 5, 5, 'FormCR');
+          Repeater['Form51L_'+$Tr2].Begin($Tr2,0, 0, 0, 0, 0, 0, 1, 5, 5, 'Form51L');
+          Repeater['Form51R_'+$Tr1].Begin($Tr1,0, 0, 0, 0, 0, 0, 1, 5, 5, 'Form51R');
+$Dis+10;  Repeater['form_pole_light2_'+$Tr1].Begin($Tr1, 10.5/2, 0.7, 0, 0, 0, 0, 1,15,15, 'form_pole_light2');
+$Dis+50;  Repeater['form_pole_light2_'+$Tr1].End();
+$Dis+50;  Repeater['form_roofYR1_'+$Tr1].Begin($Tr1, 2, 0, 0, 0, 0, 0, 1, 5, 5, 'form_roofYR1');
+$Dis+55;  Repeater['form_roofYR1_pole'+$Tr1].Begin($Tr1, 2, 0, 0, 0, 0, 0, 1,10,10, 'form_roofYR1_pole');
+$DisE-55; Repeater['form_roofYR1_pole'+$Tr1].End();
+$DisE-50; Repeater['form_roofYR1_'+$Tr1].End();
+$DisE-45; Repeater['form_pole_light2_'+$Tr1].Begin($Tr1, 10.5/2, 0.7, 0, 0, 0, 0, 1,15,15, 'form_pole_light2');
+$DisE-5;  Repeater['form_pole_light2_'+$Tr1].End();
+$DisE;    Repeater['FormCR_'+$Tr1].End();
+          Repeater['Form51L_'+$Tr2].End();
+          Repeater['Form51R_'+$Tr1].End();

@@ -1,0 +1,5 @@
+﻿BveTs Map 2.02
+$Dis; Signal['Type3_LED'].Put(0,     $Tr1, $x,4.8,0,0,$ry,0,0,0);
+      Structure['Sig_Pole'].Put(     $Tr1, $x,0.0,0,0,$ry,0,0,0);
+      Structure['Sig_Base'].Put(     $Tr1, $x,0.0,0,0,$ry,0,0,0);
+      Structure['Sig_Base_Step'].Put($Tr1, $x,0.0,0,0,$ry,0,0,0);

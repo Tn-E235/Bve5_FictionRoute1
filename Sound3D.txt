@@ -1,0 +1,8 @@
+BveTs Sound List 2.00
+RC_chime1,  ..\Sounds\Railroad crossing\RC_chime1.wav,2
+RC_chime2,  ..\Sounds\Railroad crossing\RC_chime2.wav,2
+
+RunM,       ..\Sounds\Train\RunM.wav,  8
+RunT,       ..\Sounds\Train\RunT.wav,  8
+Accel,      ..\Sounds\Train\Accel.wav, 1
+Decel,      ..\Sounds\Train\Decel.wav, 1

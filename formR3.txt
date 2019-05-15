@@ -1,0 +1,8 @@
+BveTs Map 2.02
+#右に壁があるホーム(両端が狭いタイプ)
+$Dis;     Repeater['form_roofR1_'+$Tr1].Begin($Tr1, 0, 0, 0, 0, 0, 0, 1, 5, 5, 'form_roofR1');
+          Repeater['Form51R_'+$Tr1].Begin($Tr1,0, 0, 0, 0, 0, 0, 1, 5, 5, 'Form51R');
+$Dis+50;
+$Dis-50;
+$DisE;    Repeater['form_roofR1_'+$Tr1].End();
+          Repeater['Form51R_'+$Tr1].End();

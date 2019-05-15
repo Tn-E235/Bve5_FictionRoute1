@@ -1,0 +1,18 @@
+BveTs Map 2.02
+
+distance-30;	#P即時停止（非常） 閉塞信号機では30m手前に設置 (-30M)
+	Beacon.Put(4,-1,0);
+	Structure['Beacon4'].Put(0, 0, 0, 0, 0, 0, 0, 1, 5);
+distance-55;	#P停止信号 閉塞信号機では600m、180m、85m手前に設置 (-85M)
+	Beacon.Put(3,-1,0);
+	Structure['Beacon3'].Put(0, 0, 0, 0, 0, 0, 0, 1, 5);
+distance-75;	#P停止信号 閉塞信号機では600m、180m、85m手前に設置 (-180M)
+	Beacon.Put(3,-1,0);
+	Structure['Beacon3'].Put(0, 0, 0, 0, 0, 0, 0, 1, 5);
+distance-420;	#P停止信号 閉塞信号機では600m、180m、85m手前に設置 (-600M)
+	Beacon.Put(3,-1,0);
+	Structure['Beacon3'].Put(0, 0, 0, 0, 0, 0, 0, 1, 5);
+distance+600;	#Sロング 信号機の約600m手前に設置
+	Beacon.Put(0,-1,0);
+	Structure['Beacon0'].Put(0, 0, 0, 0, 0, 0, 0, 1, 5);
+distance+600;	#距離程を信号機の位置に戻す

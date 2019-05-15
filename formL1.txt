@@ -1,0 +1,10 @@
+BveTs Map 2.02
+#左に壁があるホーム
+$Dis;     Repeater['form_roofL1_'+$Tr1].Begin($Tr1, 0, 0, 0, 0, 0, 0, 1, 5, 5, 'form_roofL1');
+          Repeater['Form51L_'+$Tr1].Begin($Tr1,0, 0, 0, 0, 0, 0, 1, 5, 5, 'Form51L');
+          Repeater['FormCL_'+$Tr1].Begin($Tr1,0, 0, 0, 0, 0, 0, 1, 5, 5, 'FormCL');
+$Dis+5;   Repeater['form_roofL1_pole_'+$Tr1].Begin($Tr1, 0, 0, 0, 0, 0, 0, 1,10,10, 'form_roofL1_pole');
+$DisE-5;  Repeater['form_roofL1_pole_'+$Tr1].End();
+$DisE;    Repeater['form_roofL1_'+$Tr1].End();
+          Repeater['Form51L_'+$Tr1].End();
+          Repeater['FormCL_'+$Tr1].End();

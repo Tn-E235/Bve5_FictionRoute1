@@ -7,7 +7,7 @@ Signal.Load('Signals.csv');
 Signal.SpeedLimit(0,25,45,75,100);
 Background.Change('Bg_fine_summer');
 include 'Setting.txt';
-include 'Map-route1.txt'; #快速ダイヤ
+include 'Route-SemiRapid.txt'; #区間快速ダイヤ
 include 'ATS-P.txt';
 include 'D-ATC.txt';
 include 'ATO-Rapid.txt';

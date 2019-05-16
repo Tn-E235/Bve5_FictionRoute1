@@ -1,5 +1,5 @@
 ﻿BveTs Map 2.02
-#
+#D-ATC閉塞
 4000+25.1;
         Section.Begin(200, 219);
         Beacon.Put(217, 0,  1);

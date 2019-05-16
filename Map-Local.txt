@@ -2,15 +2,15 @@
 
 Structure.Load('List.txt');
 Sound3D.Load('Sound3D.txt');
-Station.Load('Station.csv');
+Station.Load('Station-Local.csv');
 Signal.Load('Signals.csv');
 Signal.SpeedLimit(0,25,45,75,100);
 Background.Change('Bg_fine_summer');
 include 'Setting.txt';
 include 'Route-Local.txt'; #普通ダイヤ
 include 'ATS-P.txt';
-include 'D-ATC.txt';
-#include 'ATO-Local.txt';
+include 'D-ATC-Local.txt';
+include 'ATO-Local.txt';
 #-------------------------------------------------------------------------------
 1000-5;   #Station['ST00'].Put(-1,$margin1,$margin2);
           Structure['Stop'].Put('0', 1.75,-0.25,0,0,0,0,0,0);
@@ -39,48 +39,46 @@ include 'D-ATC.txt';
 13000-5;  #Station['ST12'].Put(-1,$margin1,$margin2);
           Structure['Stop'].Put('0', 1.75,-0.25,0,0,0,0,0,0);
 #-------------------------------------------------------------------------------
-5000-15;  Train.Add('X0','..\Structures\Tn_E235\Train\E233-6000.txt','1',-1);
-          Train['X0'].Stop(0, 0,2,75);
-4000-15;  Train['X0'].Stop(2,30,2,75);
-3000-15;  Train['X0'].Stop(2,30,2,75);
-1000-15;  Train['X0'].Stop(2,0,0,0);
+$Tnum = 'Rapid1';
+Train.Add($Tnum,'..\Structures\Tn_E235\Train\E233-6000.txt','2',1);
+4000-15;  Train[$Tnum].Stop(2, 0,2,85);
+9000-15;  Train[$Tnum].Stop(2,30,2,85);
+13000-15; Train[$Tnum].Stop(2, 0,0, 0);
 #-------------------------------------------------------------------------------
-13000-15; Train.Add('X1','..\Structures\Tn_E235\Train\E233-6000.txt','1',-1);
-          Train['X1'].Stop(0, 0,2,75);
-9000-15;  Train['X1'].Stop(2,30,2,75);
-4000-15;  Train['X1'].Stop(2,30,2,75);
-2000-15;  Train['X1'].Stop(2,30,2,75);
-1000-15;  Train['X1'].Stop(2,0,0,0);
+$Tnum = 'SemiRapid1';
+Train.Add($Tnum,'..\Structures\Tn_E235\Train\E233-6000.txt','2',1);
+1000-15;  Train[$Tnum].Stop(2,75,2,75);
+4000-15;  Train[$Tnum].Stop(2,30,2,85);
+9000-15;  Train[$Tnum].Stop(2,30,2,85);
+10000-15; Train[$Tnum].Stop(2,30,2,75);
+11000-15; Train[$Tnum].Stop(2,30,2,75);
+12000-15; Train[$Tnum].Stop(2,30,2,75);
+13000-15; Train[$Tnum].Stop(2, 0,0, 0);
 #-------------------------------------------------------------------------------
-13000-15; Train.Add('X2','..\Structures\Tn_E235\Train\E233-6000.txt','1',-1);
-          Train['X2'].Stop(0,90,2,75);
-12000-15; Train['X2'].Stop(2,30,2,75);
-11000-15; Train['X2'].Stop(2,30,2,75);
-10000-15; Train['X2'].Stop(2,30,2,75);
-9000-15;  Train['X2'].Stop(2,30,2,75);
-8000-15;  Train['X2'].Stop(2,30,2,75);
-7000-15;  Train['X2'].Stop(2,30,2,75);
-6000-15;  Train['X2'].Stop(2,30,2,75);
-5000-15;  Train['X2'].Stop(2,30,2,75);
-4000-15;  Train['X2'].Stop(2,30,2,75);
-3000-15;  Train['X2'].Stop(2,30,2,75);
-2000-15;  Train['X2'].Stop(2,30,2,75);
-1000-15;  Train['X2'].Stop(2,0,0,0);
+$Tnum = 'SemiRapid-1';
+Train.Add($Tnum,'..\Structures\Tn_E235\Train\E233-6000.txt','1',-1);
+13000-15; Train[$Tnum].Stop(2, 0,2,75);
+12000-15; Train[$Tnum].Stop(2,30,2,75);
+11000-15; Train[$Tnum].Stop(2,30,2,75);
+10000-15; Train[$Tnum].Stop(2,30,2,75);
+9000-15;  Train[$Tnum].Stop(2,30,2,85);
+8000-15;  #Train[$Tnum].Stop(2,30,2,75);
+7000-15;  #Train[$Tnum].Stop(2,30,2,75);
+6000-15;  #Train[$Tnum].Stop(2,30,2,75);
+5000-15;  #Train[$Tnum].Stop(2,30,2,75);
+4000-15;  Train[$Tnum].Stop(2,30,2,75);
+3000-15;  Train[$Tnum].Stop(2,30,2,75);
+2000-15;  Train[$Tnum].Stop(2,30,2,75);
+1000-15;  Train[$Tnum].Stop(2,0,0,0);
 #-------------------------------------------------------------------------------
-10000-12.5; Train.Add('X3','..\Structures\Tn_E235\Train\E233-1000.txt','3',-1);
-            Train['X3'].Stop(0,420,2,65);
-9000-12.5;  Train['X3'].Stop(2,0,0,0);
+$Tnum = 'Local-1';
+Train.Add($Tnum,'..\Structures\Tn_E235\Train\E233-1000.txt','3',-1);
+9000-15;  Train[$Tnum].Stop(2, 0,2,85);
+8000-15;  Train[$Tnum].Stop(2,30,2,75);
+7000-15;  Train[$Tnum].Stop(2,30,2,75);
+6000-15;  Train[$Tnum].Stop(2,30,2,75);
+5000-15;  Train[$Tnum].Stop(2,30,2,75);
+4000-15;  Train[$Tnum].Stop(2,0,0,0);
 #-------------------------------------------------------------------------------
-4000-12.5;  Train.Add('X4','..\Structures\Tn_E235\Train\E233-1000.txt','1',-1);
-8000-12.5;  Train['X4'].Stop(0, 0,2,75);
-7000-12.5;  Train['X4'].Stop(2,30,2,75);
-6000-12.5;  Train['X4'].Stop(2,30,2,75);
-5000-12.5;  Train['X4'].Stop(2,30,2,75);
-4000-12.5;  Train['X4'].Stop(2,30,2,75);
-3000-12.5;  Train['X4'].Stop(2,30,2,75);
-2000-12.5;  Train['X4'].Stop(2,30,2,75);
-1000-12.5;  Train['X4'].Stop(2,0,0,0);
 #-------------------------------------------------------------------------------
-2425;   #Train.Add('X1','..\Structures\Tn_E235\Train\E233-0_201.txt','H1', 1);
-        #Train['X1'].Stop(0,0,0,0);
 #-------------------------------------------------------------------------------

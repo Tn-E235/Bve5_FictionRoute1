@@ -26,14 +26,14 @@
 2825; Curve.BeginTransition();
 2850; Curve.Begin(-1500,-0.02);
 2950; Curve.BeginTransition();
-3000; Curve.Begin(3000, 0.02);
+3000; Curve.Begin( 3000, 0.02);
 3250; Curve.BeginTransition();
 3275; Curve.End();
 
 4900; Curve.BeginTransition();
-4925; Curve.Begin(1000,0.02);
+4925; Curve.Begin( 1000,0.02);
 5325; Curve.BeginTransition();
-5350; Curve.Begin(2000,0.02);
+5350; Curve.Begin( 2000,0.02);
 5575; Curve.BeginTransition();
 5600; Curve.End();
 
@@ -236,6 +236,16 @@
 7775; Track['2'].X.Interpolate(-3.5,   0);
 #-------------------------------------------------------------------------------
 #あっこ
+8675; Track['1'].X.Interpolate( 10.5,-300);
+8700; Track['1'].X.Interpolate(  9.5,   0);
+8750; Track['1'].X.Interpolate(  4.5, 300);
+8775; Track['1'].X.Interpolate(  3.5,   0);
+
+9000; #Curve.Begin(-500);
+9025; #Curve.End();
+9075; #Curve.Begin( 500);
+9100; #Curve.End();
+
 8675; Track['2'].X.Interpolate( -3.5,-300);
 8700; Track['2'].X.Interpolate( -4.5,   0);
 8750; Track['2'].X.Interpolate( -9.5, 300);
@@ -256,20 +266,20 @@
 9075; Track['3'].X.Interpolate( 9.2, 1000);
 9100; Track['3'].X.Interpolate( 9.0,    0);
 
-8640; Track['4'].X.Interpolate( 0.0, 350);
-8665; Track['4'].X.Interpolate( 1.0,   0);
-8700; Track['4'].X.Interpolate( 4.5,   0);
-8750; Track['4'].X.Interpolate( 9.5,   0);
+8640; Track['4'].X.Interpolate( 0.0-3.5,  350);
+8665; Track['4'].X.Interpolate( 1.0-3.5,    0);
+8700; Track['4'].X.Interpolate( 4.5-3,5,    0);
+8750; Track['4'].X.Interpolate(     0.0,    0);
 
-9000; Track['4'].X.Interpolate( 0.0,  400);
-9025; Track['4'].X.Interpolate( 0.5,    0);
-9075; Track['4'].X.Interpolate( 4.5, -400);
-9100; Track['4'].X.Interpolate( 5.0,    0);
+9000; Track['4'].X.Interpolate(-10.5,  400);
+9025; Track['4'].X.Interpolate( -9.5,    0);
+9075; Track['4'].X.Interpolate( -1.5, -400);
+9100; Track['4'].X.Interpolate(  0.0,    0);
 
-8640; Track['5'].X.Interpolate( 3.5,-300);
-8650; Track['5'].X.Interpolate( 3.2,   0);
-8690; Track['5'].X.Interpolate( 0.3, 300);
-8700; Track['5'].X.Interpolate( 0.0,   0);
+8640; Track['5'].X.Interpolate( 0.0, -300);
+8650; Track['5'].X.Interpolate( 0.6,    0);
+8690; Track['5'].X.Interpolate( 4.6,  300);
+8700; Track['5'].X.Interpolate( 5.0,    0);
 #-------------------------------------------------------------------------------
 9125; Track['2'].Y.Interpolate(  0.0, -1000);
 9125; Track['3'].Y.Interpolate(  0.0, -1000);
@@ -474,7 +484,7 @@
       $DisE = 4000;
       $Tr1  = 0;
       $Tr2  = 2;
-      include 'formL2.txt';
+      include 'formR2.txt';
       $Tr1  = 1;
       $Tr2  = 3;
       include 'formR2.txt';
@@ -501,7 +511,7 @@
 #-------------------------------------------------------------------------------
 7775; $Dis  = 7775;
       $DisE = 8000;
-      $Tr1  = 2;
+      $Tr1  = 0;
       $Tr2  = 1;
       include 'formR2.txt';
 #-------------------------------------------------------------------------------
@@ -509,7 +519,7 @@
       $DisE = 9000;
       $Tr1  = 0;
       $Tr2  = 2;
-      include 'formR2.txt';
+      include 'formL2.txt';
       $Tr1  = 1;
       include 'formR1.txt';
 #-------------------------------------------------------------------------------
@@ -522,7 +532,7 @@
 #-------------------------------------------------------------------------------
 10775;$Dis  = 10775;
       $DisE = 11000;
-      $Tr1  = 0;
+      $Tr1  = 2;
       include 'formL1.txt';
       $Tr1  = 1;
       include 'formR1.txt';
@@ -530,18 +540,18 @@
 11775;$Dis  = 11775;
       $DisE = 12000;
       $Tr1  = 0;
-      include 'formL1.txt';
+      #include 'formL1.txt';
       $Tr1  = 1;
-      include 'formR1.txt';
+      #include 'formR1.txt';
 #-------------------------------------------------------------------------------
 12775;$Dis  = 12775;
       $DisE = 13000;
       $Tr1  = 0;
       $Tr2  = 2;
-      include 'formR2.txt';
+      #include 'formR2.txt';
       $Tr1  = 1;
       $Tr2  = 3;
-      include 'formR2.txt';
+      #include 'formR2.txt';
 #-------------------------------------------------------------------------------
 0;    Repeater['DikeGrs5mL_0'].Begin('0', 0, 0, 0, 0, 0, 0, 1, 5, 5, 'DikeGrs5mL1','DikeGrs5mL2','DikeGrs5mL3','DikeGrs5mL4','DikeGrs5mL5','DikeGrs5mL6');
       Repeater['DikeGrs5mR_1'].Begin('1', 0, 0, 0, 0, 0, 0, 1, 5, 5, 'DikeGrs5mR1','DikeGrs5mR2','DikeGrs5mR3','DikeGrs5mR4','DikeGrs5mR5','DikeGrs5mR6');

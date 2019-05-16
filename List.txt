@@ -1,15 +1,15 @@
 ﻿BveTs Structure List 1.00
 ################################################################################
-rail_PC,        ..\Structures\Tn_E235\Rail\rail_PC.x                #PC枕木のレール
+rail_PC,          ..\Structures\Tn_E235\Rail\rail_PC.x                #PC枕木のレール
 #-------------------------------------------------------------------------------
 #ホーム幅7m向け(線路間隔10.5m)
-form_roofL2,    ..\Structures\Tn_E235\Station\roof\form_roofL2.x    #左に壁・屋根なし・狭いタイプ
-form_roofR2,    ..\Structures\Tn_E235\Station\roof\form_roofR2.x    #右に壁・屋根なし・狭いタイプ
+form_roofL2,      ..\Structures\Tn_E235\Station\roof\form_roofL2.x    #左に壁・屋根なし・狭いタイプ
+form_roofR2,      ..\Structures\Tn_E235\Station\roof\form_roofR2.x    #右に壁・屋根なし・狭いタイプ
 
-form_CLs1,      ..\Structures\Tn_E235\Station\roof\form_CLs1.x      #左に壁・屋根なし・狭いタイプ
-form_CRs1,      ..\Structures\Tn_E235\Station\roof\form_CRs1.x      #右に壁・屋根なし・狭いタイプ
-conc_fenceL1,   ..\Structures\Tn_E235\Station\wall\conc_fenceL1.x   #form_CLs1,form_CRs1向け
-conc_fenceR1,   ..\Structures\Tn_E235\Station\wall\conc_fenceR1.x   #ホームの壁(コンクリ)
+form_CLs1,        ..\Structures\Tn_E235\Station\roof\form_CLs1.x      #左に壁・屋根なし・狭いタイプ
+form_CRs1,        ..\Structures\Tn_E235\Station\roof\form_CRs1.x      #右に壁・屋根なし・狭いタイプ
+conc_fenceL1,     ..\Structures\Tn_E235\Station\wall\conc_fenceL1.x   #form_CLs1,form_CRs1向け
+conc_fenceR1,     ..\Structures\Tn_E235\Station\wall\conc_fenceR1.x   #ホームの壁(コンクリ)
 
 form_roofL1,      ..\Structures\Tn_E235\Station\form_roof\form_roofL1.x       #屋根・左に壁
 form_roofR1,      ..\Structures\Tn_E235\Station\form_roof\form_roofR1.x       #屋根・右に壁

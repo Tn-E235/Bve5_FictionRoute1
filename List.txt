@@ -81,7 +81,7 @@ ats_b,          ..\Structures\GeneralStr_png\Accessory\Beacon\ats_b.x
 #架線柱
 Pole1_S,        ..\Structures\GeneralStr_png\Accessory\E_Poles\Pole\Pole1_S.x
 #PoleTrs04A,     ..\Structures\GeneralStr_png\Accessory\E_Poles\PoleTruss\PoleTrs04A.x
-#PoleTrs05A,     ..\Structures\GeneralStr_png\Accessory\E_Poles\PoleTruss\PoleTrs05A.x
+PoleTrs05A,     ..\Structures\GeneralStr_png\Accessory\E_Poles\PoleTruss\PoleTrs05A.x
 PoleTrs06A,     ..\Structures\GeneralStr_png\Accessory\E_Poles\PoleTruss\PoleTrs06A.x
 PoleTrs07A,     ..\Structures\GeneralStr_png\Accessory\E_Poles\PoleTruss\PoleTrs07A.x
 PoleTrs08A,     ..\Structures\GeneralStr_png\Accessory\E_Poles\PoleTruss\PoleTrs08A.x

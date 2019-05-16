@@ -10,7 +10,7 @@ include 'Setting.txt';
 include 'Route-Local.txt'; #普通ダイヤ
 include 'ATS-P.txt';
 include 'D-ATC.txt';
-include 'ATO-Local.txt';
+#include 'ATO-Local.txt';
 #-------------------------------------------------------------------------------
 1000-5;   #Station['ST00'].Put(-1,$margin1,$margin2);
           Structure['Stop'].Put('0', 1.75,-0.25,0,0,0,0,0,0);
@@ -29,7 +29,7 @@ include 'ATO-Local.txt';
 8000-5;   Station['ST07'].Put(-1,$margin1,$margin2);
           Structure['Stop'].Put('0',-1.75,-0.25,0,0,0,0,0,0);
 9000-5;   Station['ST08'].Put(-1,$margin1,$margin2);
-          Structure['Stop'].Put('0',-1.75,-0.25,0,0,0,0,0,0);
+          Structure['Stop'].Put('0', 1.75,-0.25,0,0,0,0,0,0);
 10000-5;  #Station['ST09'].Put(-1,$margin1,$margin2);
           Structure['Stop'].Put('0', 1.75,-0.25,0,0,0,0,0,0);
 11000-5;  #Station['ST10'].Put(-1,$margin1,$margin2);

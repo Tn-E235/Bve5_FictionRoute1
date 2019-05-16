@@ -36,12 +36,13 @@
           $Tr1 = 0; $x = -2.5; $ry = 0;
           include 'SignalPut.txt';
           include 'P-Signal.txt';
-2750+25;  $Dis = distance;
+2000+1000/3+25;
           Section.BeginNew(0,2,4);
           $Tr1 = 0; $x = -2.5; $ry = 25;
           include 'SignalPut.txt';
           include 'P-Signal.txt';
-3000+25;  $Dis = distance;
+2000+(1000/3)*2+25;
+        $Dis = distance;
           Section.BeginNew(0,2,4);
           $Tr1 = 0; $x = -2.5; $ry = 0;
           include 'SignalPut.txt';

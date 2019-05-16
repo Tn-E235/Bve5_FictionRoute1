@@ -1,5 +1,5 @@
 ﻿BveTs Map 2.02
-#区間快速ダイヤ
+#普通ダイヤ
 #-------------------------------------------------------------------------------
 1575; Curve.Begin(-500);    #Track['2'].X.Interpolate(    0,-500);
 1600; Curve.End();          #Track['2'].X.Interpolate(   -1,   0);
@@ -42,31 +42,25 @@
 6850; Curve.BeginTransition();
 6875; Curve.End();
 
+#右曲がり
 7600; Curve.BeginTransition();
 7625; Curve.Begin( 400, 0.02);
+7650; Curve.BeginTransition();
+      Curve.Begin( 300);
+7775; Curve.BeginTransition();
+7800; Curve.begin( 400, 0.02);
 7925; Curve.BeginTransition();
 7950; Curve.End();
 
-10000;Curve.BeginTransition();
-10025;Curve.Begin( 600, 0.02);
-10500;Curve.BeginTransition();
-10525;Curve.End();
+8675; Curve.Begin( 300);
+8700; Curve.End();
+8750; Curve.Begin(-300);
+8775; Curve.End();
 
-10700;Curve.BeginTransition();
-10725;Curve.Begin(-700,-0.02);
-10975;Curve.BeginTransition();
-11000;Curve.End();
-
-#-------------------------------------------------------------------------------
-12575; Curve.Begin(-500);
-12600; Curve.End();
-12750; Curve.Begin( 500);
-12775; Curve.End();
-
-13000; Curve.Begin( 500);
-13025; Curve.End();
-13175; Curve.Begin(-500);
-13200; Curve.End();
+9000; Curve.Begin(-500);
+9025; Curve.End();
+9075; Curve.Begin( 500);
+9100; Curve.End();
 #-------------------------------------------------------------------------------
 1000; Gradient.BeginTransition();
             Structure['Gp_DL'].Put('0',  -2.5,0,0,0,0,0,0,0);
@@ -228,29 +222,29 @@
 6100; Track['1'].X.Interpolate( 3.5,   0);
 
 7600; Track['1'].X.Interpolate( 3.5, 800);
-7625; Track['1'].X.Interpolate( 4.5,   0);
-7750; Track['1'].X.Interpolate(13.5,-400);
-7775; Track['1'].X.Interpolate(14.0,   0);
+7625; Track['1'].X.Interpolate( 4.0,   0);
+7750; Track['1'].X.Interpolate(13.5-3.5,-400);
+7775; Track['1'].X.Interpolate(14.0-3.5,   0);
 #-------------------------------------------------------------------------------
 #島式(各駅停車)
 7650; Track['2'].X.Interpolate(   0, 500);
-7660; Track['2'].X.Interpolate( 0.3,1500);
-7675; Track['2'].X.Interpolate( 0.8,1500);
-7700; Track['2'].X.Interpolate( 2.0,-700);
-7725; Track['2'].X.Interpolate( 3.1,-700);
-7750; Track['2'].X.Interpolate( 3.6,-700);
-7775; Track['2'].X.Interpolate( 3.5,   0);
+7660; Track['2'].X.Interpolate(-0.3,1500);
+7675; Track['2'].X.Interpolate(-0.8,1500);
+7700; Track['2'].X.Interpolate(-2.0,-700);
+7725; Track['2'].X.Interpolate(-3.1,-700);
+7750; Track['2'].X.Interpolate(-3.6,-700);
+7775; Track['2'].X.Interpolate(-3.5,   0);
 #-------------------------------------------------------------------------------
 #あっこ
-8675; Track['2'].X.Interpolate( 3.5, 300);
-8700; Track['2'].X.Interpolate( 4.5,   0);
-8750; Track['2'].X.Interpolate( 9.5,-300);
-8775; Track['2'].X.Interpolate(10.5,   0);
+8675; Track['2'].X.Interpolate( -3.5,-300);
+8700; Track['2'].X.Interpolate( -4.5,   0);
+8750; Track['2'].X.Interpolate( -9.5, 300);
+8775; Track['2'].X.Interpolate(-10.5,   0);
 
-9000; Track['2'].X.Interpolate(10.5, -500);
-9025; Track['2'].X.Interpolate( 9.5,    0);
-9075; Track['2'].X.Interpolate( 6.0,  500);
-9100; Track['2'].X.Interpolate( 5.0,    0);
+9000; Track['2'].X.Interpolate(-10.5,  500);
+9025; Track['2'].X.Interpolate( -9.5,    0);
+9075; Track['2'].X.Interpolate( -6.0, -500);
+9100; Track['2'].X.Interpolate( -5.0,    0);
 
 8725; Track['3'].X.Interpolate(14.0,-200);
 8740; Track['3'].X.Interpolate(13.0,   0);

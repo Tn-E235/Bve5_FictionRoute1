@@ -1,8 +1,0 @@
-BveTs Map 2.02
-9000-15;  Train.Add('Local','..\Structures\Tn_E235\Train\E233-6000.txt','1',1);
-          Train['Local'].Stop(2,30,2,75);
-8000-15;  Train['Local'].Stop(2,30,2,75);
-7000-15;  Train['Local'].Stop(2,30,2,75);
-6000-15;  Train['Local'].Stop(2,30,2,75);
-5000-15;  Train['Local'].Stop(2,30,2,75);
-4000-15;  Train['Local'].Stop(2,30,2,75);

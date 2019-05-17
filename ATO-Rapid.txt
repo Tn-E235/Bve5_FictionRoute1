@@ -81,9 +81,9 @@
 9000-225-500;
       Beacon.Put(1006, -1, 500000+55);  #ホーム進入速度
       distance+500;
-      Structure['SpeedLim5'].Put('0', -2.6,-1.5,0,0,  0,0,0,0);	    #
-      Structure['SpeedLim5'].Put('0', -2.4,-1.5,0,0,  0,0,0,0);	    #
-      Structure['SpeedLimPole'].Put('0', -2.5,-1.4,0,0,  0,0,0,0);	#
+      #Structure['SpeedLim5'].Put('0', -2.6,-1.5,0,0,  0,0,0,0);	    #
+      #Structure['SpeedLim5'].Put('0', -2.4,-1.5,0,0,  0,0,0,0);	    #
+      #Structure['SpeedLimPole'].Put('0', -2.5,-1.4,0,0,  0,0,0,0);	#
 9000-225+50-500;
       #Beacon.Put(1006, -1, 500000+45);  #ホーム50m進入
 9000-225+100-500;
@@ -91,21 +91,21 @@
 9000-225+100-500;
       Beacon.Put(1006, -1, 500000+40);  #ホーム100m進入
       distance+500;
-      Structure['SpeedLim4'].Put('0', -2.6,-1.5,0,0,  0,0,0,0);	    #
-      Structure['SpeedLim0'].Put('0', -2.4,-1.5,0,0,  0,0,0,0);	    #
-      Structure['SpeedLimPole'].Put('0', -2.5,-1.4,0,0,  0,0,0,0);	#
+      #Structure['SpeedLim4'].Put('0', -2.6,-1.5,0,0,  0,0,0,0);	    #
+      #Structure['SpeedLim0'].Put('0', -2.4,-1.5,0,0,  0,0,0,0);	    #
+      #Structure['SpeedLimPole'].Put('0', -2.5,-1.4,0,0,  0,0,0,0);	#
 9000-225+150-500;
       Beacon.Put(1006, -1, 500000+30);  #ホーム150m進入
       distance+500;
-      Structure['SpeedLim3'].Put('0', -2.6,-1.5,0,0,  0,0,0,0);	    #
-      Structure['SpeedLim0'].Put('0', -2.4,-1.5,0,0,  0,0,0,0);	    #
-      Structure['SpeedLimPole'].Put('0', -2.5,-1.4,0,0,  0,0,0,0);	#
+      #Structure['SpeedLim3'].Put('0', -2.6,-1.5,0,0,  0,0,0,0);	    #
+      #Structure['SpeedLim0'].Put('0', -2.4,-1.5,0,0,  0,0,0,0);	    #
+      #Structure['SpeedLimPole'].Put('0', -2.5,-1.4,0,0,  0,0,0,0);	#
 9000-225+175-500;
       Beacon.Put(1006, -1, 500000+20);  #ホーム175m進入
       distance+500;
-      Structure['SpeedLim2'].Put('0', -2.6,-1.5,0,0,  0,0,0,0);	    #
-      Structure['SpeedLim0'].Put('0', -2.4,-1.5,0,0,  0,0,0,0);	    #
-      Structure['SpeedLimPole'].Put('0', -2.5,-1.4,0,0,  0,0,0,0);	#
+      #Structure['SpeedLim2'].Put('0', -2.6,-1.5,0,0,  0,0,0,0);	    #
+      #Structure['SpeedLim0'].Put('0', -2.4,-1.5,0,0,  0,0,0,0);	    #
+      #Structure['SpeedLimPole'].Put('0', -2.5,-1.4,0,0,  0,0,0,0);	#
 9000-225;
       Beacon.Put(1006, -1, 225100);
 9000; Beacon.Put(1006, -1, 100);

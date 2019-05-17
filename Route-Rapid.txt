@@ -94,7 +94,18 @@
 12350;Gradient.BeginTransition();
 12350+25/2; Structure['Gp_DD'].Put('0',  -2.5,0,0,0,0,0,0,0);
 12375;Gradient.Begin(-2);
+
 #-------------------------------------------------------------------------------
+3575-25;  Structure['Sig30_LED'].Put('0',-3,4.3,0,0,0,0,0,0);
+12575-25; Structure['Sig30_LED'].Put('0',-3,4.3,0,0,0,0,0,0);
+#-------------------------------------------------------------------------------
+1575; #SpeedLimit.Begin(60);
+      Structure['SpeedLim6'].Put('0', -2.6,-1.5,0,0,  0,0,0,0);	    #
+      Structure['SpeedLim0'].Put('0', -2.4,-1.5,0,0,  0,0,0,0);	    #
+      Structure['SpeedLimPole'].Put('0', -2.5,-1.4,0,0,  0,0,0,0);	#
+2200; #SpeedLimit.End();
+      Structure['SpeedLimEnd'].Put( '0', -2.5,-1.5,0,0,  0,0,0,0);	#
+      Structure['SpeedLimPole'].Put('0', -2.5,-1.5,0,0,  0,0,0,0);	#
 2500; SpeedLimit.Begin(75);
       Structure['SpeedLim7'].Put('0', -2.6,-1.5,0,0,  0,0,0,0);	    #
       Structure['SpeedLim5'].Put('0', -2.4,-1.5,0,0,  0,0,0,0);	    #
@@ -102,18 +113,41 @@
 2975; SpeedLimit.End();
       Structure['SpeedLimEnd'].Put( '0', -2.5,-1.5,0,0,  0,0,0,0);	#
       Structure['SpeedLimPole'].Put('0', -2.5,-1.5,0,0,  0,0,0,0);	#
+3575; #SpeedLimit.Begin(60);
+      Structure['SpeedLim6'].Put('0', -2.6,-1.5,0,0,  0,0,0,0);	    #
+      Structure['SpeedLim0'].Put('0', -2.4,-1.5,0,0,  0,0,0,0);	    #
+      Structure['SpeedLimPole'].Put('0', -2.5,-1.4,0,0,  0,0,0,0);	#
+4200; #SpeedLimit.End();
+      Structure['SpeedLimEnd'].Put( '0', -2.5,-1.5,0,0,  0,0,0,0);	#
+      Structure['SpeedLimPole'].Put('0', -2.5,-1.5,0,0,  0,0,0,0);	#
 7600; SpeedLimit.Begin(75);
       Structure['SpeedLim7'].Put('0', -2.6,-1.5,0,0,  0,0,0,0);	    #
       Structure['SpeedLim5'].Put('0', -2.4,-1.5,0,0,  0,0,0,0);	    #
       Structure['SpeedLimPole'].Put('0', -2.5,-1.4,0,0,  0,0,0,0);	#
+7650; Structure['SpeedLim3'].Put('2',  1.6,-1.5,0,0,  0,0,0,0);	    #
+      Structure['SpeedLim5'].Put('2',  1.8,-1.5,0,0,  0,0,0,0);	    #
+      Structure['SpeedLimPole'].Put('2',  1.7,-1.4,0,0,  0,0,0,0);	#
 7950; SpeedLimit.End();
       Structure['SpeedLimEnd'].Put( '0', -2.5,-1.5,0,0,  0,0,0,0);	#
       Structure['SpeedLimPole'].Put('0', -2.5,-1.5,0,0,  0,0,0,0);	#
+8635; Structure['SpeedLim3'].Put('2', -1.8,-1.5,0,0,  0,0,0,0);	    #
+      Structure['SpeedLim5'].Put('2', -1.6,-1.5,0,0,  0,0,0,0);	    #
+      Structure['SpeedLimPole'].Put('2', -1.7,-1.4,0,0,  0,0,0,0);	#
+8675; Structure['SpeedLim5'].Put('2',  2.4,-1.5,0,0,  0,0,0,0);	    #
+      Structure['SpeedLim5'].Put('2',  2.6,-1.5,0,0,  0,0,0,0);	    #
+      Structure['SpeedLimPole'].Put('2',  2.5,-1.4,0,0,  0,0,0,0);	#
 10000;SpeedLimit.Begin(90);
       Structure['SpeedLim9'].Put('0', -2.6,-1.5,0,0,  0,0,0,0);	    #
       Structure['SpeedLim0'].Put('0', -2.4,-1.5,0,0,  0,0,0,0);	    #
       Structure['SpeedLimPole'].Put('0', -2.5,-1.4,0,0,  0,0,0,0);	#
 10525;SpeedLimit.End();
+      Structure['SpeedLimEnd'].Put( '0', -2.5,-1.5,0,0,  0,0,0,0);	#
+      Structure['SpeedLimPole'].Put('0', -2.5,-1.5,0,0,  0,0,0,0);	#
+12575;#SpeedLimit.Begin(60);
+      Structure['SpeedLim6'].Put('0', -2.6,-1.5,0,0,  0,0,0,0);	    #
+      Structure['SpeedLim0'].Put('0', -2.4,-1.5,0,0,  0,0,0,0);	    #
+      Structure['SpeedLimPole'].Put('0', -2.5,-1.4,0,0,  0,0,0,0);	#
+13200;#SpeedLimit.End();
       Structure['SpeedLimEnd'].Put( '0', -2.5,-1.5,0,0,  0,0,0,0);	#
       Structure['SpeedLimPole'].Put('0', -2.5,-1.5,0,0,  0,0,0,0);	#
 #-------------------------------------------------------------------------------
@@ -219,10 +253,10 @@
 8700; Track['5'].X.Interpolate( 0.0,   0);
 #-------------------------------------------------------------------------------
 9125; Track['2'].Y.Interpolate(  0.0, -1000);
-9125; Track['3'].Y.Interpolate(  0.0, -1000);
 9150; Track['2'].Y.Interpolate( -0.5,     0);
-9150; Track['3'].Y.Interpolate( -0.5,     0);
 9450; Track['2'].Y.Interpolate(-10.0,     0);
+9125; Track['3'].Y.Interpolate(  0.0, -1000);
+9150; Track['3'].Y.Interpolate( -0.5,     0);
 9450; Track['3'].Y.Interpolate(-10.0,     0);
 #------------------------------------------------------------------------------
 9500; Track['1'].X.Interpolate( 14.0,  -400);
@@ -230,7 +264,10 @@
 9650; Track['1'].X.Interpolate(  4.5,   400);
 9675; Track['1'].X.Interpolate(  3.5,     0);
 #-------------------------------------------------------------------------------
-12575;  Track['2'].Y.Interpolate(    0,   0);
+12560;  Track['2'].Y.Interpolate(-10.0,     0);
+        Track['3'].Y.Interpolate(-10.0,     0);
+        Track['2'].Y.Interpolate(  0.0,     0);
+        Track['3'].Y.Interpolate(  0.0,     0);
 12575;  Track['2'].X.Interpolate(    0,-500);
 12600;  Track['2'].X.Interpolate(   -1,   0);
 12750;  Track['2'].X.Interpolate( -9.5, 500);
@@ -241,7 +278,6 @@
 13175;  Track['2'].X.Interpolate(   -1,-500);
 13200;  Track['2'].X.Interpolate(    0,   0);
 
-12575;  Track['3'].Y.Interpolate(    0,  0);
 12575;  Track['3'].X.Interpolate(    0+3.5, 500);
 12600;  Track['3'].X.Interpolate(    1+3.5,   0);
 12750;  Track['3'].X.Interpolate(  9.5+3.5,-500);
@@ -363,12 +399,24 @@
       $Tr1  = 3;  include 'Rpt_kasen40S.txt';
 #-------------------------------------------------------------------------------
 0;    $Dis  = distance;
-      $DisE = 5720;
+      $DisE = 1560;
       $Tr1  = 0;
       $strKey = 'PoleTrs06A';
       $x = 1.75; $y = 0; $z = 0; $span = 40; $tilt = $span;
       include 'Rpt_strPut.txt'; #うーん、使うべきではないな...
-5720; Repeater['PoleTrs10A_0'].Begin('0', 4.75, 0, 0, 0, 0, 0, 1, 40, 40, 'PoleTrs10A');
+1560; Repeater['Pole1_S_2'].Begin('2', 0, 0, 0, 0,   0, 0, 1, 40, 40, 'Pole1_S');
+      Repeater['Pole1_S_3'].Begin('3', 0, 0, 0, 0, 180, 0, 1, 40, 40, 'Pole1_S');
+2200; Repeater['Pole1_S_2'].End();
+      Repeater['Pole1_S_3'].End();
+      Repeater['PoleTrs06A_0'].Begin('0', 1.75, 0, 0, 0, 0, 0, 1, 40, 40, 'PoleTrs06A');
+3560; Repeater['Pole1_S_2'].Begin('2', 0, 0, 0, 0,   0, 0, 1, 40, 40, 'Pole1_S');
+      Repeater['Pole1_S_3'].Begin('3', 0, 0, 0, 0, 180, 0, 1, 40, 40, 'Pole1_S');
+      Repeater['PoleTrs06A_0'].End();
+4200; Repeater['Pole1_S_2'].End();
+      Repeater['Pole1_S_3'].End();
+      Repeater['PoleTrs06A_0'].Begin('0', 1.75, 0, 0, 0, 0, 0, 1, 40, 40, 'PoleTrs06A');
+5720; Repeater['PoleTrs06A_0'].End();
+      Repeater['PoleTrs10A_0'].Begin('0', 4.75, 0, 0, 0, 0, 0, 1, 40, 40, 'PoleTrs10A');
 6080; Repeater['PoleTrs10A_0'].End();
       Repeater['PoleTrs06A_0'].Begin('0', 1.75, 0, 0, 0, 0, 0, 1, 40, 40, 'PoleTrs06A');
 7640; Repeater['PoleTrs06A_0'].End();
@@ -383,6 +431,9 @@
       Repeater['Pole1_S_0'].End();
       Repeater['Pole1_S_1'].End();
       Repeater['PoleTrs06A_0'].Begin('0', 1.75, 0, 0, 0, 0, 0, 1, 40, 40, 'PoleTrs06A');
+12600;Repeater['PoleTrs06A_0'].End();
+      Repeater['Pole1_S_2'].Begin('2', 0, 0, 0, 0,   0, 0, 1, 40, 40, 'Pole1_S');
+      Repeater['Pole1_S_3'].Begin('3', 0, 0, 0, 0, 180, 0, 1, 40, 40, 'Pole1_S');
 #-------------------------------------------------------------------------------
 775;  $Dis  = 775;          #ホームストラクチャ開始地点
       $DisE = 1000;         #ホームストラクチャ終了地点
@@ -432,9 +483,9 @@
 6775; $Dis  = 6775;
       $DisE = 7000;
       $Tr1  = 0;
-      include 'formL1.txt';
+      include 'formL3.txt';
       $Tr1  = 1;
-      include 'formR1.txt';
+      include 'formR3.txt';
 #-------------------------------------------------------------------------------
 7775; $Dis  = 7775;
       $DisE = 8000;
@@ -460,9 +511,9 @@
 10775;$Dis  = 10775;
       $DisE = 11000;
       $Tr1  = 0;
-      include 'formL1.txt';
+      include 'formL3.txt';
       $Tr1  = 1;
-      include 'formR1.txt';
+      include 'formR3.txt';
 #-------------------------------------------------------------------------------
 11775;$Dis  = 11775;
       $DisE = 12000;

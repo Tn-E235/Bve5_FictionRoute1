@@ -3,23 +3,22 @@
 rail_PC,          ..\Structures\Tn_E235\Rail\rail_PC.x                #PC枕木のレール
 #-------------------------------------------------------------------------------
 #ホーム幅7m向け(線路間隔10.5m)
-form_roofL2,      ..\Structures\Tn_E235\Station\roof\form_roofL2.x    #左に壁・屋根なし・狭いタイプ
-form_roofR2,      ..\Structures\Tn_E235\Station\roof\form_roofR2.x    #右に壁・屋根なし・狭いタイプ
-
-form_CLs1,        ..\Structures\Tn_E235\Station\roof\form_CLs1.x      #左に壁・屋根なし・狭いタイプ
-form_CRs1,        ..\Structures\Tn_E235\Station\roof\form_CRs1.x      #右に壁・屋根なし・狭いタイプ
-conc_fenceL1,     ..\Structures\Tn_E235\Station\wall\conc_fenceL1.x   #form_CLs1,form_CRs1向け
-conc_fenceR1,     ..\Structures\Tn_E235\Station\wall\conc_fenceR1.x   #ホームの壁(コンクリ)
-
 form_roofL1,      ..\Structures\Tn_E235\Station\form_roof\form_roofL1.x       #屋根・左に壁
 form_roofR1,      ..\Structures\Tn_E235\Station\form_roof\form_roofR1.x       #屋根・右に壁
 form_roofL1_pole, ..\Structures\Tn_E235\Station\form_roof\form_roofL1_pole.x  #form_roofL1用支柱
 form_roofR1_pole, ..\Structures\Tn_E235\Station\form_roof\form_roofR1_pole.x  #form_roofR1用支柱
+form_roofL2,      ..\Structures\Tn_E235\Station\roof\form_roofL2.x    #左に壁・屋根なし・狭いタイプ
+form_roofR2,      ..\Structures\Tn_E235\Station\roof\form_roofR2.x    #右に壁・屋根なし・狭いタイプ
 
 form_roofYL1,     ..\Structures\Tn_E235\Station\form_roof\form_roofYL1.x      #Y字の屋根(左)
 form_roofYL1_pole,..\Structures\Tn_E235\Station\form_roof\form_roofYL1_pole.x #form_roofYL1用支柱
 form_roofYR1,     ..\Structures\Tn_E235\Station\form_roof\form_roofYR1.x      #Y字の屋根(右)
 form_roofYR1_pole,..\Structures\Tn_E235\Station\form_roof\form_roofYR1_pole.x #form_roofYR1用支柱
+
+form_CLs1,        ..\Structures\Tn_E235\Station\roof\form_CLs1.x              #左に壁・屋根なし・狭いタイプ
+form_CRs1,        ..\Structures\Tn_E235\Station\roof\form_CRs1.x              #右に壁・屋根なし・狭いタイプ
+conc_fenceL1,     ..\Structures\Tn_E235\Station\wall\conc_fenceL1.x           #form_CLs1,form_CRs1向け
+conc_fenceR1,     ..\Structures\Tn_E235\Station\wall\conc_fenceR1.x           #ホームの壁(コンクリ)
 
 form_pole_light1, ..\Structures\Tn_E235\Station\light\form_pole_light1.x      #ホーム用照明(片側)
 form_pole_light2, ..\Structures\Tn_E235\Station\light\form_pole_light2.x      #ホーム用照明(両側)

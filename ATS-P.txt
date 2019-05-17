@@ -11,15 +11,7 @@
           $Tr1 = 0; $x = -2.5; $ry = 0;
           include 'SignalPut.txt';
           include 'Ab-Signal.txt';
-1250+25;
-1000+1000/3+25;
-          $Dis = distance;
-          Section.BeginNew(0,2,4);
-          $Tr1 = 0; $x = -2.5; $ry = 0;
-          include 'SignalPut.txt';
-          include 'Bl-Signal.txt';
-1000+(1000/3)*2+25;
-          $Dis = distance;
+1575-25;  $Dis = distance;
           Section.BeginNew(0,2,4);
           $Tr1 = 0; $x = -2.5; $ry = 0;
           include 'SignalPut.txt';
@@ -30,15 +22,14 @@
           include 'SignalPut.txt';
           include 'Ab-Signal.txt';
 #-------------------------------------------------------------------------------
-2250+25;
 2000+1000/3+25;
-        $Dis = distance;
+          $Dis = distance;
           Section.BeginNew(0,2,4);
           $Tr1 = 0; $x = -2.5; $ry = 0;
           include 'SignalPut.txt';
           include 'Bl-Signal.txt';
 2000+(1000/3)*2+25;
-        $Dis = distance;
+          $Dis = distance;
           Section.BeginNew(0,2,4);
           $Tr1 = 0; $x = -2.5; $ry = 25;
           include 'SignalPut.txt';
@@ -49,15 +40,7 @@
           include 'SignalPut.txt';
           include 'Ab-Signal.txt';
 #-------------------------------------------------------------------------------
-3250+25;
-3000+1000/3+25;
-        $Dis = distance;
-          Section.BeginNew(0,2,4);
-          $Tr1 = 0; $x = -2.5; $ry = 0;
-          include 'SignalPut.txt';
-          include 'Bl-Signal.txt';
-3000+(1000/3)*2+25;
-          $Dis = distance;
+3575-25;  $Dis = distance;
           Section.BeginNew(0,2,4);
           $Tr1 = 0; $x = -2.5; $ry = 0;
           include 'SignalPut.txt';
@@ -79,15 +62,14 @@
           Structure['Sig_Base_Step'].Put('0',-2.5,0.0,29,0,0,0,0,0);
 9000;     Beacon.Put(25,-1, 0);
 9000;     Beacon.Put(3,-1,0);
-9250+35;
 9000+1000/3+25;
-        $Dis = distance;
+          $Dis = distance;
           Section.BeginNew(0,2,4);
           $Tr1 = 0; $x = -2.5; $ry = 0;
           include 'SignalPut.txt';
           include 'Bl-Signal.txt';
 9000+(1000/3)*2+25;
-        $Dis = distance;
+          $Dis = distance;
           Section.BeginNew(0,2,4);
           $Tr1 = 0; $x = -2.5; $ry = 0;
           include 'SignalPut.txt';
@@ -98,15 +80,14 @@
           include 'SignalPut.txt';
           include 'Ab-Signal.txt';
 #-------------------------------------------------------------------------------
-10250+25;
 10000+1000/3+25;
-        $Dis = distance;
+          $Dis = distance;
           Section.BeginNew(0,2,4);
           $Tr1 = 0; $x = -2.5; $ry = 0;
           include 'SignalPut.txt';
           include 'Bl-Signal.txt';
 10000+(1000/3)*2+25;
-        $Dis = distance;
+          $Dis = distance;
           Section.BeginNew(0,2,4);
           $Tr1 = 0; $x = -2.5; $ry = 0;
           include 'SignalPut.txt';
@@ -118,13 +99,13 @@
           include 'Ab-Signal.txt';
 #-------------------------------------------------------------------------------
 11000+1000/3+25;
-        $Dis = distance;
+          $Dis = distance;
           Section.BeginNew(0,2,4);
           $Tr1 = 0; $x = -2.5; $ry = 0;
           include 'SignalPut.txt';
           include 'Bl-Signal.txt';
 11000+(1000/3)*2+25;
-        $Dis = distance;
+          $Dis = distance;
           Section.BeginNew(0,2,4);
           $Tr1 = 0; $x = -2.5; $ry = 0;
           include 'SignalPut.txt';
@@ -135,14 +116,8 @@
           include 'SignalPut.txt';
           include 'Ab-Signal.txt';
 #-------------------------------------------------------------------------------
-12000+1000/3+25;
-        $Dis = distance;
-          Section.BeginNew(0,2,4);
-          $Tr1 = 0; $x = -2.5; $ry = 0;
-          include 'SignalPut.txt';
-          include 'Bl-Signal.txt';
-12000+(1000/3)*2+25;
-        $Dis = distance;
+12575-25;
+          $Dis = distance;
           Section.BeginNew(0,2,4);
           $Tr1 = 0; $x = -2.5; $ry = 0;
           include 'SignalPut.txt';
@@ -153,14 +128,7 @@
           include 'SignalPut.txt';
           include 'Ab-Signal.txt';
 #-------------------------------------------------------------------------------
-13000+1000/3+25;
-        $Dis = distance;
-          Section.BeginNew(0,2,4);
-          $Tr1 = 0; $x = -2.5; $ry = 0;
-          include 'SignalPut.txt';
-          include 'Bl-Signal.txt';
-13000+(1000/3)*2+25;
-        $Dis = distance;
+13575-25; $Dis = distance;
           Section.BeginNew(0,2,4);
           $Tr1 = 0; $x = -2.5; $ry = 0;
           include 'SignalPut.txt';

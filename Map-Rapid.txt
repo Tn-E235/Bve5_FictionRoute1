@@ -7,7 +7,7 @@ Signal.Load('Signals.csv');
 Signal.SpeedLimit(0,25,45,75,100);
 Background.Change('Bg_fine_summer');
 include 'Setting.txt';
-include 'Route-SemiRapid.txt'; #区間快速ダイヤ
+include 'Route-Rapid.txt'; #区間快速ダイヤ
 include 'ATS-P.txt';
 include 'D-ATC.txt';
 include 'ATO-Rapid.txt';
@@ -93,7 +93,7 @@ Train.Add($Tnum,'..\Structures\Tn_E235\Train\E233-1000.txt','2',1);
 4000-15;  Train[$Tnum].Stop(2,300,2,75);
 #-------------------------------------------------------------------------------
 $Tnum='Local-1';
-Train.Add($Tnum,'..\Structures\Tn_E235\Train\E233-1000.txt','2',-1);
+Train.Add($Tnum,'..\Structures\Tn_E235\Train\E233-1000.txt','3',-1);
 9000-15;  Train[$Tnum].Stop(2,240,2,75);
 8000-15;  Train[$Tnum].Stop(2,30,2,75);
 7000-15;  Train[$Tnum].Stop(2,30,2,75);

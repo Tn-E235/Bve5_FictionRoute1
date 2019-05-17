@@ -1,4 +1,4 @@
-﻿BveTs Map 2.02
+BveTs Map 2.02
 #D-ATC閉塞
 4000+25.1;
         Section.Begin(200, 219);
@@ -232,7 +232,11 @@
 2000;             Beacon.put( 211,  0, 100);
 2100;             Beacon.put( 212,  0, 400000+75);
 2975+$TrainDis;   Beacon.put( 211,  0, 100);
-7100;             Beacon.Put( 212, -1, 500000+75);
+3575;             Beacon.put( 211,  0,  60);
+4200+$TrainDis;   Beacon.put( 211,  0, 100);
+7150;             Beacon.Put( 212, -1, 500000+35);
+7750+$TrainDis;   Beacon.Put( 211, -1,  75);
 7950+$TrainDis;   Beacon.Put( 211, -1, 100);
+8175;             Beacon.Put( 212, -1, 500000+55);
 9500;             Beacon.Put( 212, -1, 500000+90);
 10525+$TrainDis;  Beacon.Put( 211, -1, 100);

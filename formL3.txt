@@ -1,8 +1,20 @@
 BveTs Map 2.02
 #左に壁があるホーム(両端が狭いタイプ)
-$Dis;     Repeater['form_roofL1_'+$Tr1].Begin($Tr1, 0, 0, 0, 0, 0, 0, 1, 5, 5, 'form_roofL1');
-          Repeater['Form51L_'+$Tr1].Begin($Tr1,0, 0, 0, 0, 0, 0, 1, 5, 5, 'Form51L');
-$Dis+50;
-$Dis-50;
-$DisE;    Repeater['form_roofL1_'+$Tr1].End();
-          Repeater['Form51L_'+$Tr1].End();
+$Dis;     Repeater['Form51L_'+$Tr1].Begin(     $Tr1,   0, 0,    0, 0,  0, 0, 1,   5,   5, 'Form51L');
+          Repeater['form_CLs1_'+$Tr1].Begin(   $Tr1,   0, 0.09, 0, 0,  0, 0, 1,   5,   5, 'form_CLs1');
+          Repeater['conc_fenceL1_'+$Tr1].Begin($Tr1,   0, 0.09, 0, 0,  0, 0, 1, 2.5, 2.5, 'conc_fenceL1');
+$Dis+50;  Repeater['form_CLs1_'+$Tr1].End();
+          Repeater['conc_fenceL1_'+$Tr1].End();
+          Repeater['form_roofL_'+$Tr1].Begin(  $Tr1,   0, 0.09, 0, 0,  0, 0, 3,   5,   5, 'form_roofL1');
+          Repeater['FormCL_'+$Tr1].Begin(      $Tr1,   0,    0, 0, 0,  0, 0, 1,   5,   5, 'FormCL');
+          Structure['conc_fenceL1'].Put(       $Tr1,-4.7, 0.09, 5, 0,-90, 0, 0,   0);
+$Dis+55;  Repeater['form_roofL1_pole_'+$Tr1].Begin($Tr1, 0, 0, 0, 0, 0, 0, 1,10,10, 'form_roofL1_pole');
+$DisE-55; Repeater['form_roofL1_pole_'+$Tr1].End();
+$DisE-50; Repeater['form_roofL_'+$Tr1].End();
+          Repeater['FormCL_'+$Tr1].End();
+          Repeater['form_CLs1_'+$Tr1].Begin(   $Tr1,   0, 0.09, 0, 0,  0, 0, 1,   5,   5, 'form_CLs1');
+          Repeater['conc_fenceL1_'+$Tr1].Begin($Tr1,   0, 0.09, 0, 0,  0, 0, 1, 2.5, 2.5, 'conc_fenceL1');
+          Structure['conc_fenceL1'].Put(       $Tr1,-7.3, 0.09,-5, 0, 90, 0, 0, 0);
+$DisE;    Repeater['Form51L_'+$Tr1].End();
+          Repeater['form_CLs1_'+$Tr1].End();
+          Repeater['conc_fenceL1_'+$Tr1].End();

@@ -1,25 +1,5 @@
-﻿BveTs Map 2.02
-#区間快速ダイヤ
-#-------------------------------------------------------------------------------
-1575; Curve.Begin(-500);    #Track['2'].X.Interpolate(    0,-500);
-1600; Curve.End();          #Track['2'].X.Interpolate(   -1,   0);
-1750; Curve.Begin( 500);    #Track['2'].X.Interpolate( -9.5, 500);
-1775; Curve.End();          #Track['2'].X.Interpolate(-10.5,   0);
-
-2000; Curve.Begin( 500);    #Track['2'].X.Interpolate(-10.5, 500);
-2025; Curve.End();          #Track['2'].X.Interpolate( -9.5,   0);
-2175; Curve.Begin(-500);    #Track['2'].X.Interpolate(   -1,-500);
-2200; Curve.End();          #Track['2'].X.Interpolate(    0,   0);
-#-------------------------------------------------------------------------------
-3575; Curve.Begin(-500);
-3600; Curve.End();
-3750; Curve.Begin( 500);
-3775; Curve.End();
-
-4000; Curve.Begin( 500);
-4025; Curve.End();
-4175; Curve.Begin(-500);
-4200; Curve.End();
+BveTs Map 2.02
+#快速ダイヤ
 #-------------------------------------------------------------------------------
 2500; Curve.BeginTransition();
 2525; Curve.Begin( -300,-0.03);
@@ -56,7 +36,6 @@
 10725;Curve.Begin(-700,-0.02);
 10975;Curve.BeginTransition();
 11000;Curve.End();
-
 #-------------------------------------------------------------------------------
 12575; Curve.Begin(-500);
 12600; Curve.End();
@@ -102,7 +81,7 @@
 6500+25/2;  Structure['Gp_UU'].Put('0',  -2.5,0,0,0,0,0,0,0);
 6525; Gradient.Begin( 10);
 6875; Gradient.BeginTransition();
-6875+25/2;  Structure['Gp_DU'].Put('0',  -2.5,0,0,0,0,0,0,0);
+6875+25/2;  Structure['Gp_DU'].Put('0',  1.7,-0.5,0,0,90,0,0,0);
 6900; Gradient.Begin(-15);
 7400; Gradient.BeginTransition();
 7400+25/2;  Structure['Gp_DD'].Put('0',  -2.5,0,0,0,0,0,0,0);
@@ -126,11 +105,15 @@
 12350+25/2; Structure['Gp_DD'].Put('0',  -2.5,0,0,0,0,0,0,0);
 12375;Gradient.Begin(-2);
 #-------------------------------------------------------------------------------
-# 2000-5;
-# 4000-5;
-#13000-5;
-#
+3575-25;  Structure['Sig30_LED'].Put('0',-3,4.3,0,0,0,0,0,0);
 #-------------------------------------------------------------------------------
+1575; #SpeedLimit.Begin(60);
+      Structure['SpeedLim6'].Put('0', -2.6,-1.5,0,0,  0,0,0,0);	    #
+      Structure['SpeedLim0'].Put('0', -2.4,-1.5,0,0,  0,0,0,0);	    #
+      Structure['SpeedLimPole'].Put('0', -2.5,-1.4,0,0,  0,0,0,0);	#
+2200; #SpeedLimit.End();
+      Structure['SpeedLimEnd'].Put( '0', -2.5,-1.5,0,0,  0,0,0,0);	#
+      Structure['SpeedLimPole'].Put('0', -2.5,-1.5,0,0,  0,0,0,0);	#
 2500; SpeedLimit.Begin(75);
       Structure['SpeedLim7'].Put('0', -2.6,-1.5,0,0,  0,0,0,0);	    #
       Structure['SpeedLim5'].Put('0', -2.4,-1.5,0,0,  0,0,0,0);	    #
@@ -138,13 +121,29 @@
 2975; SpeedLimit.End();
       Structure['SpeedLimEnd'].Put( '0', -2.5,-1.5,0,0,  0,0,0,0);	#
       Structure['SpeedLimPole'].Put('0', -2.5,-1.5,0,0,  0,0,0,0);	#
+3575; #SpeedLimit.Begin(60);
+      Structure['SpeedLim6'].Put('0', -2.6,-1.5,0,0,  0,0,0,0);	    #
+      Structure['SpeedLim0'].Put('0', -2.4,-1.5,0,0,  0,0,0,0);	    #
+      Structure['SpeedLimPole'].Put('0', -2.5,-1.4,0,0,  0,0,0,0);	#
+4200; #SpeedLimit.End();
+      Structure['SpeedLimEnd'].Put( '0', -2.5,-1.5,0,0,  0,0,0,0);	#
+      Structure['SpeedLimPole'].Put('0', -2.5,-1.5,0,0,  0,0,0,0);	#
 7600; SpeedLimit.Begin(75);
       Structure['SpeedLim7'].Put('0', -2.6,-1.5,0,0,  0,0,0,0);	    #
       Structure['SpeedLim5'].Put('0', -2.4,-1.5,0,0,  0,0,0,0);	    #
       Structure['SpeedLimPole'].Put('0', -2.5,-1.4,0,0,  0,0,0,0);	#
+7650; Structure['SpeedLim3'].Put('2',  1.6,-1.5,0,0,  0,0,0,0);	    #
+      Structure['SpeedLim5'].Put('2',  1.8,-1.5,0,0,  0,0,0,0);	    #
+      Structure['SpeedLimPole'].Put('2',  1.7,-1.4,0,0,  0,0,0,0);	#
 7950; SpeedLimit.End();
       Structure['SpeedLimEnd'].Put( '0', -2.5,-1.5,0,0,  0,0,0,0);	#
       Structure['SpeedLimPole'].Put('0', -2.5,-1.5,0,0,  0,0,0,0);	#
+8635; Structure['SpeedLim3'].Put('2', -1.8,-1.5,0,0,  0,0,0,0);	    #
+      Structure['SpeedLim5'].Put('2', -1.6,-1.5,0,0,  0,0,0,0);	    #
+      Structure['SpeedLimPole'].Put('2', -1.7,-1.4,0,0,  0,0,0,0);	#
+8675; Structure['SpeedLim5'].Put('2',  2.4,-1.5,0,0,  0,0,0,0);	    #
+      Structure['SpeedLim5'].Put('2',  2.6,-1.5,0,0,  0,0,0,0);	    #
+      Structure['SpeedLimPole'].Put('2',  2.5,-1.4,0,0,  0,0,0,0);	#
 10000;SpeedLimit.Begin(90);
       Structure['SpeedLim9'].Put('0', -2.6,-1.5,0,0,  0,0,0,0);	    #
       Structure['SpeedLim0'].Put('0', -2.4,-1.5,0,0,  0,0,0,0);	    #
@@ -152,71 +151,57 @@
 10525;SpeedLimit.End();
       Structure['SpeedLimEnd'].Put( '0', -2.5,-1.5,0,0,  0,0,0,0);	#
       Structure['SpeedLimPole'].Put('0', -2.5,-1.5,0,0,  0,0,0,0);	#
+12575;SpeedLimit.Begin(60);
+      Structure['SpeedLim6'].Put('0', -2.6,-1.5,0,0,  0,0,0,0);	    #
+      Structure['SpeedLim0'].Put('0', -2.4,-1.5,0,0,  0,0,0,0);	    #
+      Structure['SpeedLimPole'].Put('0', -2.5,-1.4,0,0,  0,0,0,0);	#
+13200;SpeedLimit.End();
+      Structure['SpeedLimEnd'].Put( '0', -2.5,-1.5,0,0,  0,0,0,0);	#
+      Structure['SpeedLimPole'].Put('0', -2.5,-1.5,0,0,  0,0,0,0);	#
 #-------------------------------------------------------------------------------
 0;    Track['0'].X.Interpolate(0.0);
 0;    Track['1'].X.Interpolate(3.5);
 #-------------------------------------------------------------------------------
-1575;  Track['1'].X.Interpolate(    0+3.5, 500);
-1600;  Track['1'].X.Interpolate(    1+3.5,   0);
-1750;  Track['1'].X.Interpolate(  9.5+3.5,-500);
-1775;  Track['1'].X.Interpolate( 10.5+3.5,   0);
+1575; Track['2'].X.Interpolate(    0,-500);
+1600; Track['2'].X.Interpolate(   -1,   0);
+1750; Track['2'].X.Interpolate( -9.5, 500);
+1775; Track['2'].X.Interpolate(-10.5,   0);
 
-2000;  Track['1'].X.Interpolate( 10.5+3.5,-500);
-2025;  Track['1'].X.Interpolate(  9.5+3.5,   0);
-2175;  Track['1'].X.Interpolate(    1+3.5, 500);
-2200;  Track['1'].X.Interpolate(    0+3.5,   0);
-
-1575; Track['2'].X.Interpolate(    0, 500);
-1600; Track['2'].X.Interpolate(    1,   0);
-1750; Track['2'].X.Interpolate(  9.5,-500);
-1775; Track['2'].X.Interpolate( 10.5,   0);
-
-2000; Track['2'].X.Interpolate( 10.5,-500);
-2025; Track['2'].X.Interpolate(  9.5,   0);
-2175; Track['2'].X.Interpolate(    1, 500);
+2000; Track['2'].X.Interpolate(-10.5, 500);
+2025; Track['2'].X.Interpolate( -9.5,   0);
+2175; Track['2'].X.Interpolate(   -1,-500);
 2200; Track['2'].X.Interpolate(    0,   0);
 
-1575; Track['3'].X.Interpolate(    0*2+3.5,-500);
-1600; Track['3'].X.Interpolate(    1*2+3.5,   0);
-1750; Track['3'].X.Interpolate(  9.5*2+3.5, 500);
-1775; Track['3'].X.Interpolate( 10.52*+3.5,   0);
+1575; Track['3'].X.Interpolate(    0+3.5, 500);
+1600; Track['3'].X.Interpolate(    1+3.5,   0);
+1750; Track['3'].X.Interpolate(  9.5+3.5,-500);
+1775; Track['3'].X.Interpolate( 10.5+3.5,   0);
 
-2000; Track['3'].X.Interpolate( 10.5*2+3.5, 500);
-2025; Track['3'].X.Interpolate(  9.5*2+3.5,   0);
-2175; Track['3'].X.Interpolate(    1*2+3.5,-500);
-2200; Track['3'].X.Interpolate(    0*2+3.5,   0);
+2000; Track['3'].X.Interpolate( 10.5+3.5,-500);
+2025; Track['3'].X.Interpolate(  9.5+3.5,   0);
+2175; Track['3'].X.Interpolate(    1+3.5, 500);
+2200; Track['3'].X.Interpolate(    0+3.5,   0);
 #-------------------------------------------------------------------------------
-3575;  Track['1'].X.Interpolate(    0+3.5, 500);
-3600;  Track['1'].X.Interpolate(    1+3.5,   0);
-3750;  Track['1'].X.Interpolate(  9.5+3.5,-500);
-3775;  Track['1'].X.Interpolate( 10.5+3.5,   0);
+3575; Track['2'].X.Interpolate(    0,-500);
+3600; Track['2'].X.Interpolate(   -1,   0);
+3750; Track['2'].X.Interpolate( -9.5, 500);
+3775; Track['2'].X.Interpolate(-10.5,   0);
 
-3000;  Track['1'].X.Interpolate( 10.5+3.5,-500);
-3025;  Track['1'].X.Interpolate(  9.5+3.5,   0);
-3175;  Track['1'].X.Interpolate(    1+3.5, 500);
-3200;  Track['1'].X.Interpolate(    0+3.5,   0);
-
-3575; Track['2'].X.Interpolate(    0, 500);
-3600; Track['2'].X.Interpolate(    1,   0);
-3750; Track['2'].X.Interpolate(  9.5,-500);
-3775; Track['2'].X.Interpolate( 10.5,   0);
-
-4000; Track['2'].X.Interpolate( 10.5,-500);
-4025; Track['2'].X.Interpolate(  9.5,   0);
-4175; Track['2'].X.Interpolate(    1, 500);
+4000; Track['2'].X.Interpolate(-10.5, 500);
+4025; Track['2'].X.Interpolate( -9.5,   0);
+4175; Track['2'].X.Interpolate(   -1,-500);
 4200; Track['2'].X.Interpolate(    0,   0);
 
-3575; Track['3'].X.Interpolate(    0*2+3.5,-500);
-3600; Track['3'].X.Interpolate(    1*2+3.5,   0);
-3750; Track['3'].X.Interpolate(  9.5*2+3.5, 500);
-3775; Track['3'].X.Interpolate( 10.5*2+3.5,   0);
+3575; Track['3'].X.Interpolate(    0+3.5, 500);
+3600; Track['3'].X.Interpolate(    1+3.5,   0);
+3750; Track['3'].X.Interpolate(  9.5+3.5,-500);
+3775; Track['3'].X.Interpolate( 10.5+3.5,   0);
 
-4000; Track['3'].X.Interpolate( 10.5*2+3.5, 500);
-4025; Track['3'].X.Interpolate(  9.5*2+3.5,   0);
-4175; Track['3'].X.Interpolate(    1*2+3.5,-500);
-4200; Track['3'].X.Interpolate(    0*2+3.5,   0);
+4000; Track['3'].X.Interpolate( 10.5+3.5,-500);
+4025; Track['3'].X.Interpolate(  9.5+3.5,   0);
+4175; Track['3'].X.Interpolate(    1+3.5, 500);
+4200; Track['3'].X.Interpolate(    0+3.5,   0);
 #-------------------------------------------------------------------------------
-#島式
 5675; Track['1'].X.Interpolate( 3.5, 300);
 5700; Track['1'].X.Interpolate( 4.5,   0);
 5750; Track['1'].X.Interpolate( 9.5,-300);
@@ -232,7 +217,6 @@
 7750; Track['1'].X.Interpolate(13.5,-400);
 7775; Track['1'].X.Interpolate(14.0,   0);
 #-------------------------------------------------------------------------------
-#島式(各駅停車)
 7650; Track['2'].X.Interpolate(   0, 500);
 7660; Track['2'].X.Interpolate( 0.3,1500);
 7675; Track['2'].X.Interpolate( 0.8,1500);
@@ -241,7 +225,6 @@
 7750; Track['2'].X.Interpolate( 3.6,-700);
 7775; Track['2'].X.Interpolate( 3.5,   0);
 #-------------------------------------------------------------------------------
-#あっこ
 8675; Track['2'].X.Interpolate( 3.5, 300);
 8700; Track['2'].X.Interpolate( 4.5,   0);
 8750; Track['2'].X.Interpolate( 9.5,-300);
@@ -278,10 +261,10 @@
 8700; Track['5'].X.Interpolate( 0.0,   0);
 #-------------------------------------------------------------------------------
 9125; Track['2'].Y.Interpolate(  0.0, -1000);
-9125; Track['3'].Y.Interpolate(  0.0, -1000);
 9150; Track['2'].Y.Interpolate( -0.5,     0);
-9150; Track['3'].Y.Interpolate( -0.5,     0);
 9450; Track['2'].Y.Interpolate(-10.0,     0);
+9125; Track['3'].Y.Interpolate(  0.0, -1000);
+9150; Track['3'].Y.Interpolate( -0.5,     0);
 9450; Track['3'].Y.Interpolate(-10.0,     0);
 #------------------------------------------------------------------------------
 9500; Track['1'].X.Interpolate( 14.0,  -400);
@@ -289,37 +272,39 @@
 9650; Track['1'].X.Interpolate(  4.5,   400);
 9675; Track['1'].X.Interpolate(  3.5,     0);
 #-------------------------------------------------------------------------------
-12575;  Track['1'].X.Interpolate(    0+3.5, 500);
-12600;  Track['1'].X.Interpolate(    1+3.5,   0);
-12750;  Track['1'].X.Interpolate(  9.5+3.5,-500);
-12775;  Track['1'].X.Interpolate( 10.5+3.5,   0);
+12560;  Track['2'].Y.Interpolate(-10.0,     0);
+        Track['3'].Y.Interpolate(-10.0,     0);
+        Track['2'].Y.Interpolate(  0.0,     0);
+        Track['3'].Y.Interpolate(  0.0,     0);
+12575;  Track['1'].X.Interpolate(  3.5, 500);
+12600;  Track['1'].X.Interpolate( 4.15,   0);
+12750;  Track['1'].X.Interpolate( 11.8,-500);
+12775;  Track['1'].X.Interpolate( 12.5,   0);
 
-13000;  Track['1'].X.Interpolate( 10.5+3.5,-500);
-13025;  Track['1'].X.Interpolate(  9.5+3.5,   0);
-13175;  Track['1'].X.Interpolate(    1+3.5, 500);
-13200;  Track['1'].X.Interpolate(    0+3.5,   0);
+13000;  Track['1'].X.Interpolate( 12.5,-500);
+13025;  Track['1'].X.Interpolate( 11.8,   0);
+13175;  Track['1'].X.Interpolate( 4.15, 500);
+13200;  Track['1'].X.Interpolate(  3.5,   0);
 
-12575;  Track['2'].Y.Interpolate(    0,   0);
 12575;  Track['2'].X.Interpolate(    0, 500);
-12600;  Track['2'].X.Interpolate(    1,   0);
-12750;  Track['2'].X.Interpolate(  9.5,-500);
-12775;  Track['2'].X.Interpolate( 10.5,   0);
+12600;  Track['2'].X.Interpolate( 0.65,   0);
+12750;  Track['2'].X.Interpolate(  8.3,-500);
+12775;  Track['2'].X.Interpolate(  9.0,   0);
 
-13000;  Track['2'].X.Interpolate( 10.5,-500);
-13025;  Track['2'].X.Interpolate(  9.5,   0);
-13175;  Track['2'].X.Interpolate(    1, 500);
+13000;  Track['2'].X.Interpolate(  9.0,-500);
+13025;  Track['2'].X.Interpolate(  8.3,   0);
+13175;  Track['2'].X.Interpolate( 0.65, 500);
 13200;  Track['2'].X.Interpolate(    0,   0);
 
-12575;  Track['3'].Y.Interpolate(    0,  0);
-12575;  Track['3'].X.Interpolate(    0*2+3.5,-500);
-12600;  Track['3'].X.Interpolate(    1*2+3.5,   0);
-12750;  Track['3'].X.Interpolate(  9.5*2+3.5, 500);
-12775;  Track['3'].X.Interpolate( 10.5*2+3.5,   0);
+12575;  Track['3'].X.Interpolate(  3.5, 250);
+12600;  Track['3'].X.Interpolate( 4.95,   0);
+12750;  Track['3'].X.Interpolate( 20.1,-250);
+12775;  Track['3'].X.Interpolate( 21.5,   0);
 
-13000;  Track['3'].X.Interpolate( 10.5*2+3.5, 500);
-13025;  Track['3'].X.Interpolate(  9.5*2+3.5,   0);
-13175;  Track['3'].X.Interpolate(    1*2+3.5,-500);
-13200;  Track['3'].X.Interpolate(    0*2+3.5,   0);
+13000;  Track['3'].X.Interpolate( 21.5,-250);
+13025;  Track['3'].X.Interpolate( 20.1,   0);
+13175;  Track['3'].X.Interpolate( 4.95, 250);
+13200;  Track['3'].X.Interpolate(  3.5,   0);
 #-------------------------------------------------------------------------------
 1000; Track['Gr'].Y.Interpolate(-6.0);
 1025; Track['Gr'].Y.Interpolate(-5.5);
@@ -367,10 +352,10 @@
 10975; Track['1'].Cant.BeginTransition();
 11000; Track['1'].Cant.End();
 #-------------------------------------------------------------------------------
-0;    $Dis  = distance;
-      $DisE = 15000;
-      $Tr1  = 0;  include 'Rpt_railPC.txt';
-      $Tr1  = 1;  include 'Rpt_railPC.txt';
+0;    $Dis  = distance;                     #0mから
+      $DisE = 15000;                        #15000mまで
+      $Tr1  = 0;  include 'Rpt_railPC.txt'; #Track[0]にレールストラクチャを設置
+      $Tr1  = 1;  include 'Rpt_railPC.txt'; #Track[1]にレールストラクチャを設置
 1575; $Dis  = distance;
       $DisE = 2200;
       $Tr1  = 2;  include 'Rpt_railPC.txt';
@@ -403,11 +388,11 @@
       $DisE = 15000;
       $Tr1  = 0;  include 'Rpt_kasen40S.txt';
       $Tr1  = 1;  include 'Rpt_kasen40S.txt';
-1575; $Dis  = distance;
+1560; $Dis  = distance;
       $DisE = 2200;
       $Tr1  = 2;  include 'Rpt_kasen40S.txt';
       $Tr1  = 3;  include 'Rpt_kasen40S.txt';
-3575; $Dis  = distance;
+3560; $Dis  = distance;
       $DisE = 4200;
       $Tr1  = 2;  include 'Rpt_kasen40S.txt';
       $Tr1  = 3;  include 'Rpt_kasen40S.txt';
@@ -426,17 +411,28 @@
       $Tr1  = 3;  include 'Rpt_kasen40S.txt';
       $DisE = 9100;
       $Tr1  = 4;  include 'Rpt_kasen40S.txt';
-12575;$Dis  = distance;
+12560;$Dis  = distance;
       $DisE = 13200;
       $Tr1  = 2;  include 'Rpt_kasen40S.txt';
       $Tr1  = 3;  include 'Rpt_kasen40S.txt';
 #-------------------------------------------------------------------------------
 0;    $Dis  = distance;
-      $DisE = 5720;
+      $DisE = 1560;
       $Tr1  = 0;
       $strKey = 'PoleTrs06A';
       $x = 1.75; $y = 0; $z = 0; $span = 40; $tilt = $span;
       include 'Rpt_strPut.txt'; #うーん、使うべきではないな...
+1560; Repeater['Pole1_S_2'].Begin('2', 0, 0, 0, 0,   0, 0, 1, 40, 40, 'Pole1_S');
+      Repeater['Pole1_S_3'].Begin('3', 0, 0, 0, 0, 180, 0, 1, 40, 40, 'Pole1_S');
+2200; Repeater['Pole1_S_2'].End();
+      Repeater['Pole1_S_3'].End();
+      Repeater['PoleTrs06A_0'].Begin('0', 1.75, 0, 0, 0, 0, 0, 1, 40, 40, 'PoleTrs06A');
+3560; Repeater['Pole1_S_2'].Begin('2', 0, 0, 0, 0,   0, 0, 1, 40, 40, 'Pole1_S');
+      Repeater['Pole1_S_3'].Begin('3', 0, 0, 0, 0, 180, 0, 1, 40, 40, 'Pole1_S');
+      Repeater['PoleTrs06A_0'].End();
+4200; Repeater['Pole1_S_2'].End();
+      Repeater['Pole1_S_3'].End();
+      Repeater['PoleTrs06A_0'].Begin('0', 1.75, 0, 0, 0, 0, 0, 1, 40, 40, 'PoleTrs06A');
 5720; Repeater['PoleTrs10A_0'].Begin('0', 4.75, 0, 0, 0, 0, 0, 1, 40, 40, 'PoleTrs10A');
 6080; Repeater['PoleTrs10A_0'].End();
       Repeater['PoleTrs06A_0'].Begin('0', 1.75, 0, 0, 0, 0, 0, 1, 40, 40, 'PoleTrs06A');
@@ -448,26 +444,29 @@
       Repeater['PoleTrs05A_2'].Begin('2', 2, 0, 0, 0, 0, 0, 1, 40, 40, 'PoleTrs05A');
       Repeater['Pole1_S_0'].Begin('0', 0, 0, 0, 0, 180, 0, 1, 40, 40, 'Pole1_S');
       Repeater['Pole1_S_1'].Begin('1', 0, 0, 0, 0,   0, 0, 1, 40, 40, 'Pole1_S');
-9670; Repeater['PoleTrs05A_2'].End();
+9680; Repeater['PoleTrs05A_2'].End();
       Repeater['Pole1_S_0'].End();
       Repeater['Pole1_S_1'].End();
       Repeater['PoleTrs06A_0'].Begin('0', 1.75, 0, 0, 0, 0, 0, 1, 40, 40, 'PoleTrs06A');
+12600;Repeater['PoleTrs06A_0'].End();
+      Repeater['Pole1_S_0'].Begin('0', 0, 0, 0, 0,   0, 0, 1, 40, 40, 'Pole1_S');
+      Repeater['Pole1_S_3'].Begin('3', 0, 0, 0, 0, 180, 0, 1, 40, 40, 'Pole1_S');
 #-------------------------------------------------------------------------------
-775;  $Dis  = 775;
-      $DisE = 1000;
-      $Tr1  = 0;
-      include 'formL1.txt';
-      $Tr1  = 1;
-      include 'formR1.txt';
+775;  $Dis  = 775;          #ホームストラクチャ開始地点
+      $DisE = 1000;         #ホームストラクチャ終了地点
+      $Tr1  = 0;            #Track[0](自線)
+      include 'formL1.txt'; #Track[0]の左にホームストラクチャを設置
+      $Tr1  = 1;            #Track[1](他線)
+      include 'formR1.txt'; #Track[1]の右にホームストラクチャを設置
 #-------------------------------------------------------------------------------
-1775; $Dis  = 1775;
-      $DisE = 2000;
-      $Tr1  = 0;
-      $Tr2  = 2;
-      include 'formR2.txt';
-      $Tr1  = 1;
-      $Tr2  = 3;
-      include 'formR2.txt';
+1775; $Dis  = 1775;         #ホームストラクチャ開始地点
+      $DisE = 2000;         #ホームストラクチャ終了地点
+      $Tr1  = 0;            #Track[0](自線)
+      $Tr2  = 2;            #Track[2](他線)
+      include 'formL2.txt'; #Track[0]からTrack[2]の間にホームストラクチャ(左側)を設置
+      $Tr1  = 1;            #Track[1](他線)
+      $Tr2  = 3;            #Track[3](他線)
+      include 'formR2.txt'; #Track[1]からTrack[3]の間にホームストラクチャ(右側)を設置
 #-------------------------------------------------------------------------------
 2775; $Dis  = 2775;
       $DisE = 3000;
@@ -501,9 +500,9 @@
 6775; $Dis  = 6775;
       $DisE = 7000;
       $Tr1  = 0;
-      include 'formR1.txt';
+      include 'formL3.txt';
       $Tr1  = 1;
-      include 'formR1.txt';
+      include 'formR3.txt';
 #-------------------------------------------------------------------------------
 7775; $Dis  = 7775;
       $DisE = 8000;
@@ -529,9 +528,9 @@
 10775;$Dis  = 10775;
       $DisE = 11000;
       $Tr1  = 0;
-      include 'formL1.txt';
+      include 'formL3.txt';
       $Tr1  = 1;
-      include 'formR1.txt';
+      include 'formR3.txt';
 #-------------------------------------------------------------------------------
 11775;$Dis  = 11775;
       $DisE = 12000;
@@ -549,6 +548,7 @@
       $Tr2  = 3;
       include 'formR2.txt';
 #-------------------------------------------------------------------------------
+#左右の土手
 0;    Repeater['DikeGrs5mL_0'].Begin('0', 0, 0, 0, 0, 0, 0, 1, 5, 5, 'DikeGrs5mL1','DikeGrs5mL2','DikeGrs5mL3','DikeGrs5mL4','DikeGrs5mL5','DikeGrs5mL6');
       Repeater['DikeGrs5mR_1'].Begin('1', 0, 0, 0, 0, 0, 0, 1, 5, 5, 'DikeGrs5mR1','DikeGrs5mR2','DikeGrs5mR3','DikeGrs5mR4','DikeGrs5mR5','DikeGrs5mR6');
 1575; Repeater['DikeGrs5mL_0'].End();

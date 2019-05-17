@@ -1,3 +1,6 @@
 BveTs Signal Aspects List 1.00,,,,,
 Type3_LED,Sig30_LED,,Sig32_LED,,Sig34_LED
 ,Flare30,,Flare32,,Flare34
+,,,,,
+E233-light,E233-headlight,E233-taillight,,,
+,E233-headlight,E233-taillight,,,

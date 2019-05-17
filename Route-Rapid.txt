@@ -208,6 +208,21 @@
 7625; Track['1'].X.Interpolate( 4.5,   0);
 7750; Track['1'].X.Interpolate(13.5,-400);
 7775; Track['1'].X.Interpolate(14.0,   0);
+
+5675; Track['3'].X.Interpolate( 3.5, 300);
+5700; Track['3'].X.Interpolate( 4.5,   0);
+5750; Track['3'].X.Interpolate( 9.5,-300);
+5775; Track['3'].X.Interpolate(10.5,   0);
+
+6000; Track['3'].X.Interpolate(10.5,-300);
+6025; Track['3'].X.Interpolate( 9.5,   0);
+6075; Track['3'].X.Interpolate( 4.5, 300);
+6100; Track['3'].X.Interpolate( 3.5,   0);
+
+7600; Track['3'].X.Interpolate( 3.5, 800);
+7625; Track['3'].X.Interpolate( 4.5,   0);
+7750; Track['3'].X.Interpolate(13.5,-400);
+7775; Track['3'].X.Interpolate(14.0,   0);
 #-------------------------------------------------------------------------------
 7650; Track['2'].X.Interpolate(   0, 500);
 7660; Track['2'].X.Interpolate( 0.3,1500);

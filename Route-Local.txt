@@ -289,11 +289,6 @@
 8750; Track['1'].X.Interpolate( 4.5, 300);
 8775; Track['1'].X.Interpolate( 3.5,   0);
 
-9000; #Curve.Begin(-500);
-9025; #Curve.End();
-9075; #Curve.Begin( 500);
-9100; #Curve.End();
-
 8675; Track['2'].X.Interpolate( -3.5,-300);
 8700; Track['2'].X.Interpolate(-4.55,   0);
 8750; Track['2'].X.Interpolate( -8.7, 300);
@@ -497,7 +492,7 @@
       $x = 1.75; $y = 0; $z = 0; $span = 40; $tilt = $span;
       include 'Rpt_strPut.txt'; #うーん、使うべきではないな...
 4000; Repeater['Pole1_S_0'].Begin('0', 0, 0, 0, 0,   0, 0, 1, 40, 40, 'Pole1_S');
-      Repeater['Pole1_S_3'].Begin('3', 0, 0, 0, 0,   0, 0, 1, 40, 40, 'Pole1_S');
+      Repeater['Pole1_S_3'].Begin('3', 0, 0, 0, 0, 180, 0, 1, 40, 40, 'Pole1_S');
 4200; Repeater['Pole1_S_0'].End();
       Repeater['Pole1_S_3'].End();
 5720; Repeater['PoleTrs10A_0'].Begin('0', 4.75, 0, 0, 0, 0, 0, 1, 40, 40, 'PoleTrs10A');

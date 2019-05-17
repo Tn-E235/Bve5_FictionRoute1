@@ -55,24 +55,15 @@ Train.Add($Tnum,'..\Structures\Tn_E235\Train\E233-6000.txt','2',1);
 12000-15; Train[$Tnum].Stop(2,30,2,75);
 13000-15; Train[$Tnum].Stop(2, 0,0, 0);
 #-------------------------------------------------------------------------------
-$Tnum = 'SemiRapid-1';
-Train.Add($Tnum,'..\Structures\Tn_E235\Train\E233-6000.txt','1',-1);
-13000-15; Train[$Tnum].Stop(2, 0,2,75);
-12000-15; Train[$Tnum].Stop(2,30,2,75);
-11000-15; Train[$Tnum].Stop(2,30,2,75);
-10000-15; Train[$Tnum].Stop(2,30,2,75);
+$Tnum = 'Rapid-1';
+Train.Add($Tnum,'..\Structures\Tn_E235\Train\E233-6000-1.txt','1',-1);
+13000-15; Train[$Tnum].Stop(2,60,2,85);
 9000-15;  Train[$Tnum].Stop(2,30,2,85);
-8000-15;  #Train[$Tnum].Stop(2,30,2,75);
-7000-15;  #Train[$Tnum].Stop(2,30,2,75);
-6000-15;  #Train[$Tnum].Stop(2,30,2,75);
-5000-15;  #Train[$Tnum].Stop(2,30,2,75);
 4000-15;  Train[$Tnum].Stop(2,30,2,75);
-3000-15;  Train[$Tnum].Stop(2,30,2,75);
-2000-15;  Train[$Tnum].Stop(2,30,2,75);
 1000-15;  Train[$Tnum].Stop(2,0,0,0);
 #-------------------------------------------------------------------------------
 $Tnum = 'Local-1';
-Train.Add($Tnum,'..\Structures\Tn_E235\Train\E233-1000.txt','3',-1);
+Train.Add($Tnum,'..\Structures\Tn_E235\Train\E233-1000-1.txt','3',-1);
 9000-15;  Train[$Tnum].Stop(2, 0,2,85);
 8000-15;  Train[$Tnum].Stop(2,30,2,75);
 7000-15;  Train[$Tnum].Stop(2,30,2,75);
@@ -80,5 +71,16 @@ Train.Add($Tnum,'..\Structures\Tn_E235\Train\E233-1000.txt','3',-1);
 5000-15;  Train[$Tnum].Stop(2,30,2,75);
 4000-15;  Train[$Tnum].Stop(2,0,0,0);
 #-------------------------------------------------------------------------------
+$Tnum='SemiRapid-1';
+Train.Add($Tnum,'..\Structures\Tn_E235\Train\E233-6000-1.txt','1',-1);
+13000-15; Train[$Tnum].Stop(2,105,2,75);
+12000-15; Train[$Tnum].Stop(2,30,2,75);
+11000-15; Train[$Tnum].Stop(2,30,2,75);
+10000-15; Train[$Tnum].Stop(2,30,2,75);
+9000-15;  Train[$Tnum].Stop(2,30,2,85);
+4000-15;  Train[$Tnum].Stop(2,30,2,75);
+3000-15;  Train[$Tnum].Stop(2,30,2,75);
+2000-15;  Train[$Tnum].Stop(2,30,2,75);
+1000-15;  Train[$Tnum].Stop(2, 0,0, 0);
 #-------------------------------------------------------------------------------
 #-------------------------------------------------------------------------------

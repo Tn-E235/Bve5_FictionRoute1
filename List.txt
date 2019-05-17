@@ -44,6 +44,10 @@ E233-6000-2,    ..\Structures\Tn_E235\Train\E233-6000\E233-6000-2.x
 E233-6000-4,    ..\Structures\Tn_E235\Train\E233-6000\E233-6000-4.x
 E233-6000-7,    ..\Structures\Tn_E235\Train\E233-6000\E233-6000-7.x
 E233-6000-8,    ..\Structures\Tn_E235\Train\E233-6000\E233-6000-8.x
+
+E233-headlight, ..\Structures\Tn_E235\Train\Light\E233-headlight.x
+E233-taillight, ..\Structures\Tn_E235\Train\Light\E233-taillight.x
+
 #-------------------------------------------------------------------------------
 #水路
 #Waterway,       ..\Structures\Tn_E235\Dike\Waterway.x
